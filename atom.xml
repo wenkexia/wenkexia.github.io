@@ -1,0 +1,525 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>wenke</title>
+  
+  <subtitle>个人博客</subtitle>
+  <link href="https://wenkex.gitee.io/atom.xml" rel="self"/>
+  
+  <link href="https://wenkex.gitee.io/"/>
+  <updated>2022-03-01T10:10:33.000Z</updated>
+  <id>https://wenkex.gitee.io/</id>
+  
+  <author>
+    <name>wenke</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>window终端</title>
+    <link href="https://wenkex.gitee.io/2022/030155434.html"/>
+    <id>https://wenkex.gitee.io/2022/030155434.html</id>
+    <published>2022-03-01T10:10:33.000Z</published>
+    <updated>2022-03-01T10:10:33.000Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;Windows-Terminal&quot;&gt;&lt;a href=&quot;#Windows-Terminal&quot; class=&quot;headerlink&quot; title=&quot;Windows Terminal&quot;&gt;&lt;/a&gt;Windows</summary>
+        
+      
+    
+    
+    
+    <category term="工具" scheme="https://wenkex.gitee.io/categories/%E5%B7%A5%E5%85%B7/"/>
+    
+    
+    <category term="待分" scheme="https://wenkex.gitee.io/tags/%E5%BE%85%E5%88%86/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>四级</title>
+    <link href="https://wenkex.gitee.io/2022/02278414.html"/>
+    <id>https://wenkex.gitee.io/2022/02278414.html</id>
+    <published>2022-02-27T01:52:55.000Z</published>
+    <updated>2022-02-27T01:52:55.000Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;&lt;a href=&quot;https://www.zhihu.com/question/293278754&quot;&gt;https://www.zhihu.com/question/293278754&lt;/a&gt;&lt;/p&gt;
+&lt;h1 id=&quot;时间分配&quot;&gt;&lt;a href=&quot;#时间分配&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="待分" scheme="https://wenkex.gitee.io/categories/%E5%BE%85%E5%88%86/"/>
+    
+    
+    <category term="待分" scheme="https://wenkex.gitee.io/tags/%E5%BE%85%E5%88%86/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Linux</title>
+    <link href="https://wenkex.gitee.io/2022/022615691.html"/>
+    <id>https://wenkex.gitee.io/2022/022615691.html</id>
+    <published>2022-02-26T12:50:16.000Z</published>
+    <updated>2022-02-26T12:50:16.000Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;&lt;a href=&quot;https://mp.weixin.qq.com/s/MP6gWfkyKaBLNCpEOHhk_g&quot;&gt;使用linux的好处&lt;/a&gt;&lt;/p&gt;
+&lt;h1 id=&quot;使用linux的好处&quot;&gt;&lt;a href=&quot;#使用linux的好处&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="知识" scheme="https://wenkex.gitee.io/categories/%E7%9F%A5%E8%AF%86/"/>
+    
+    
+    <category term="待分" scheme="https://wenkex.gitee.io/tags/%E5%BE%85%E5%88%86/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>图像相关</title>
+    <link href="https://wenkex.gitee.io/2022/022126260.html"/>
+    <id>https://wenkex.gitee.io/2022/022126260.html</id>
+    <published>2022-02-21T10:12:31.000Z</published>
+    <updated>2022-02-21T10:12:31.000Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;怎么看手机分辨率&quot;&gt;&lt;a href=&quot;#怎么看手机分辨率&quot; class=&quot;headerlink&quot; title=&quot;怎么看手机分辨率&quot;&gt;&lt;/a&gt;怎么看手机分辨率&lt;/h1&gt;&lt;p&gt;上网查自己手机型号&lt;br&gt;查看自己手机截图信息的尺寸即分辨率&lt;/p&gt;
+&lt;h1</summary>
+        
+      
+    
+    
+    
+    <category term="知识" scheme="https://wenkex.gitee.io/categories/%E7%9F%A5%E8%AF%86/"/>
+    
+    
+    <category term="待分" scheme="https://wenkex.gitee.io/tags/%E5%BE%85%E5%88%86/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>数据结构</title>
+    <link href="https://wenkex.gitee.io/2022/02191106.html"/>
+    <id>https://wenkex.gitee.io/2022/02191106.html</id>
+    <published>2022-02-19T04:04:47.000Z</published>
+    <updated>2022-02-19T04:04:47.000Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;&lt;a</summary>
+        
+      
+    
+    
+    
+    <category term="知识" scheme="https://wenkex.gitee.io/categories/%E7%9F%A5%E8%AF%86/"/>
+    
+    
+    <category term="待分" scheme="https://wenkex.gitee.io/tags/%E5%BE%85%E5%88%86/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>微信小程序</title>
+    <link href="https://wenkex.gitee.io/2022/012435506.html"/>
+    <id>https://wenkex.gitee.io/2022/012435506.html</id>
+    <published>2022-01-24T09:33:43.000Z</published>
+    <updated>2022-01-24T09:33:43.000Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;目录结构&quot;&gt;&lt;a href=&quot;#目录结构&quot; class=&quot;headerlink&quot; title=&quot;目录结构&quot;&gt;&lt;/a&gt;目录结构&lt;/h1&gt;&lt;p&gt;pages用来存放所有小程序的页面&lt;br&gt;utils用来存放工具性质的模块(例如：格式化时间的自定义模块)&lt;br&gt;app.</summary>
+        
+      
+    
+    
+    
+    <category term="知识" scheme="https://wenkex.gitee.io/categories/%E7%9F%A5%E8%AF%86/"/>
+    
+    
+    <category term="小程序" scheme="https://wenkex.gitee.io/tags/%E5%B0%8F%E7%A8%8B%E5%BA%8F/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>自动化</title>
+    <link href="https://wenkex.gitee.io/2022/012223479.html"/>
+    <id>https://wenkex.gitee.io/2022/012223479.html</id>
+    <published>2022-01-22T11:35:24.000Z</published>
+    <updated>2022-01-22T11:35:24.000Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;Chrome-Recorder&quot;&gt;&lt;a href=&quot;#Chrome-Recorder&quot; class=&quot;headerlink&quot; title=&quot;Chrome Recorder&quot;&gt;&lt;/a&gt;Chrome Recorder&lt;/h1&gt;&lt;p&gt;自动化工具</summary>
+        
+      
+    
+    
+    
+    <category term="知识" scheme="https://wenkex.gitee.io/categories/%E7%9F%A5%E8%AF%86/"/>
+    
+    
+    <category term="自动化" scheme="https://wenkex.gitee.io/tags/%E8%87%AA%E5%8A%A8%E5%8C%96/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>window操作</title>
+    <link href="https://wenkex.gitee.io/2022/012246677.html"/>
+    <id>https://wenkex.gitee.io/2022/012246677.html</id>
+    <published>2022-01-22T01:09:49.000Z</published>
+    <updated>2022-01-22T01:09:49.000Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;输入法&quot;&gt;&lt;a href=&quot;#输入法&quot; class=&quot;headerlink&quot; title=&quot;输入法&quot;&gt;&lt;/a&gt;输入法&lt;/h1&gt;&lt;h2 id=&quot;不认识的汉字怎么打&quot;&gt;&lt;a href=&quot;#不认识的汉字怎么打&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="知识" scheme="https://wenkex.gitee.io/categories/%E7%9F%A5%E8%AF%86/"/>
+    
+    
+    <category term="window" scheme="https://wenkex.gitee.io/tags/window/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>python自动化办公库</title>
+    <link href="https://wenkex.gitee.io/2022/012151162.html"/>
+    <id>https://wenkex.gitee.io/2022/012151162.html</id>
+    <published>2022-01-21T13:57:05.000Z</published>
+    <updated>2022-01-21T13:57:05.000Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;&lt;a href=&quot;https://mp.weixin.qq.com/s/WYni01nzv2lbG4VK59U0nA&quot;&gt;原文&lt;/a&gt;&lt;/p&gt;
+&lt;h1 id=&quot;微信自动化库&quot;&gt;&lt;a href=&quot;#微信自动化库&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="python" scheme="https://wenkex.gitee.io/categories/python/"/>
+    
+    
+    <category term="自动化" scheme="https://wenkex.gitee.io/tags/%E8%87%AA%E5%8A%A8%E5%8C%96/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>hexo主题配置</title>
+    <link href="https://wenkex.gitee.io/2022/01208095.html"/>
+    <id>https://wenkex.gitee.io/2022/01208095.html</id>
+    <published>2022-01-20T11:19:51.000Z</published>
+    <updated>2022-01-20T11:19:51.000Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;butterfly主题配置&quot;&gt;&lt;a href=&quot;#butterfly主题配置&quot; class=&quot;headerlink&quot; title=&quot;butterfly主题配置&quot;&gt;&lt;/a&gt;butterfly主题配置&lt;/h1&gt;&lt;p&gt;&lt;a</summary>
+        
+      
+    
+    
+    
+    <category term="hexo" scheme="https://wenkex.gitee.io/categories/hexo/"/>
+    
+    
+    <category term="hexo" scheme="https://wenkex.gitee.io/tags/hexo/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>python-anaconda使用</title>
+    <link href="https://wenkex.gitee.io/2022/011846557.html"/>
+    <id>https://wenkex.gitee.io/2022/011846557.html</id>
+    <published>2022-01-18T04:25:25.000Z</published>
+    <updated>2022-01-18T04:25:25.000Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;介绍&quot;&gt;&lt;a href=&quot;#介绍&quot; class=&quot;headerlink&quot; title=&quot;介绍&quot;&gt;&lt;/a&gt;介绍&lt;/h1&gt;&lt;p&gt;Anaconda 是一个用于python/R科学计算和机器学习的开源工具(也称为Python的一种发行版)，支持 Linux,</summary>
+        
+      
+    
+    
+    
+    <category term="python" scheme="https://wenkex.gitee.io/categories/python/"/>
+    
+    
+    <category term="python" scheme="https://wenkex.gitee.io/tags/python/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>开车技巧</title>
+    <link href="https://wenkex.gitee.io/2022/011053187.html"/>
+    <id>https://wenkex.gitee.io/2022/011053187.html</id>
+    <published>2022-01-10T07:33:40.000Z</published>
+    <updated>2022-01-10T07:33:40.000Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;基础&quot;&gt;&lt;a href=&quot;#基础&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="知识" scheme="https://wenkex.gitee.io/categories/%E7%9F%A5%E8%AF%86/"/>
+    
+    
+    <category term="开车" scheme="https://wenkex.gitee.io/tags/%E5%BC%80%E8%BD%A6/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>markdown语法</title>
+    <link href="https://wenkex.gitee.io/2022/010947193.html"/>
+    <id>https://wenkex.gitee.io/2022/010947193.html</id>
+    <published>2022-01-09T03:24:32.000Z</published>
+    <updated>2022-01-09T03:24:32.000Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;&lt;a href=&quot;https://markdown.com.cn/basic-syntax/&quot;&gt;官方文档&lt;/a&gt;&lt;/p&gt;
+&lt;h1 id=&quot;概述&quot;&gt;&lt;a href=&quot;#概述&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="知识" scheme="https://wenkex.gitee.io/categories/%E7%9F%A5%E8%AF%86/"/>
+    
+    
+    <category term="markdown" scheme="https://wenkex.gitee.io/tags/markdown/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>vscode使用</title>
+    <link href="https://wenkex.gitee.io/2022/01093653.html"/>
+    <id>https://wenkex.gitee.io/2022/01093653.html</id>
+    <published>2022-01-09T03:18:05.000Z</published>
+    <updated>2022-01-09T03:18:05.000Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;vscode快捷键&quot;&gt;&lt;a href=&quot;#vscode快捷键&quot; class=&quot;headerlink&quot; title=&quot;vscode快捷键&quot;&gt;&lt;/a&gt;vscode快捷键&lt;/h1&gt;&lt;p&gt;F1 或 Ctrl+Shift+P（俗称万能键）  ：打开命令面板&lt;/p&gt;
+&lt;h2</summary>
+        
+      
+    
+    
+    
+    <category term="工具" scheme="https://wenkex.gitee.io/categories/%E5%B7%A5%E5%85%B7/"/>
+    
+    
+    <category term="vscode" scheme="https://wenkex.gitee.io/tags/vscode/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>python基础</title>
+    <link href="https://wenkex.gitee.io/2022/010834543.html"/>
+    <id>https://wenkex.gitee.io/2022/010834543.html</id>
+    <published>2022-01-08T14:30:18.000Z</published>
+    <updated>2022-01-08T14:30:18.000Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;pythontutor&quot;&gt;&lt;a href=&quot;#pythontutor&quot; class=&quot;headerlink&quot; title=&quot;pythontutor&quot;&gt;&lt;/a&gt;pythontutor&lt;/h1&gt;&lt;p&gt;&lt;a</summary>
+        
+      
+    
+    
+    
+    <category term="python" scheme="https://wenkex.gitee.io/categories/python/"/>
+    
+    
+    <category term="python" scheme="https://wenkex.gitee.io/tags/python/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>AutoJS</title>
+    <link href="https://wenkex.gitee.io/2022/010827358.html"/>
+    <id>https://wenkex.gitee.io/2022/010827358.html</id>
+    <published>2022-01-08T09:17:39.000Z</published>
+    <updated>2022-01-08T09:17:39.000Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;&lt;a href=&quot;https://www.its203.com/searchArticle&quot;&gt;https://www.its203.com/searchArticle&lt;/a&gt;&lt;/p&gt;
+&lt;h1 id=&quot;问题&quot;&gt;&lt;a href=&quot;#问题&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="自动化" scheme="https://wenkex.gitee.io/categories/%E8%87%AA%E5%8A%A8%E5%8C%96/"/>
+    
+    
+    <category term="自动" scheme="https://wenkex.gitee.io/tags/%E8%87%AA%E5%8A%A8/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>鸿蒙开发</title>
+    <link href="https://wenkex.gitee.io/2022/010839456.html"/>
+    <id>https://wenkex.gitee.io/2022/010839456.html</id>
+    <published>2022-01-08T07:37:55.000Z</published>
+    <updated>2022-01-08T07:37:55.000Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;HarmonyOS概述&quot;&gt;&lt;a href=&quot;#HarmonyOS概述&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="鸿蒙" scheme="https://wenkex.gitee.io/categories/%E9%B8%BF%E8%92%99/"/>
+    
+    
+    <category term="鸿蒙" scheme="https://wenkex.gitee.io/tags/%E9%B8%BF%E8%92%99/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>HTML</title>
+    <link href="https://wenkex.gitee.io/2022/010854626.html"/>
+    <id>https://wenkex.gitee.io/2022/010854626.html</id>
+    <published>2022-01-08T05:26:58.000Z</published>
+    <updated>2022-01-08T05:26:58.000Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;a class=&quot;btn-beautify button--animated &quot; href=&quot;https://mp.weixin.qq.com/s/JH_kfBaMhvUTYIRCJY6XtQ&quot; title=&quot;原文&quot;&gt;&lt;span&gt;原文&lt;/span&gt;&lt;/a&gt;
+&lt;h1</summary>
+        
+      
+    
+    
+    
+    <category term="前端" scheme="https://wenkex.gitee.io/categories/%E5%89%8D%E7%AB%AF/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>学会高效读代码</title>
+    <link href="https://wenkex.gitee.io/2022/010815003.html"/>
+    <id>https://wenkex.gitee.io/2022/010815003.html</id>
+    <published>2022-01-08T01:17:14.000Z</published>
+    <updated>2022-01-08T01:17:14.000Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;a class=&quot;btn-beautify button--animated larger&quot; href=&quot;https://mp.weixin.qq.com/s/PpAfqjv7CDpDXHmcD6pAfw/&quot; title=&quot;原文&quot;&gt;&lt;i class=&quot;far</summary>
+        
+      
+    
+    
+    
+    <category term="知识" scheme="https://wenkex.gitee.io/categories/%E7%9F%A5%E8%AF%86/"/>
+    
+    
+    <category term="效率" scheme="https://wenkex.gitee.io/tags/%E6%95%88%E7%8E%87/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>内网穿透</title>
+    <link href="https://wenkex.gitee.io/2022/01086932.html"/>
+    <id>https://wenkex.gitee.io/2022/01086932.html</id>
+    <published>2022-01-08T00:23:00.000Z</published>
+    <updated>2022-01-08T00:23:58.000Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;内网穿透是指将内网中的软件服务通过网络代理方式暴露给广域网用户。可以实现内网穿透的方式很多，比如通过防火墙硬件、网络穿透软件来进行实现。&lt;br&gt;先简单解释一下，大多数情况下，我们的个人电脑都处于内网，即没有可公开访问的独立 IP</summary>
+        
+      
+    
+    
+    
+    <category term="知识" scheme="https://wenkex.gitee.io/categories/%E7%9F%A5%E8%AF%86/"/>
+    
+    
+    <category term="待分" scheme="https://wenkex.gitee.io/tags/%E5%BE%85%E5%88%86/"/>
+    
+  </entry>
+  
+</feed>
