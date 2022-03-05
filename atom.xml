@@ -3,11 +3,11 @@
   <title>wenke</title>
   
   <subtitle>个人博客</subtitle>
-  <link href="https://wenkex.gitee.io/atom.xml" rel="self"/>
+  <link href="https://wenkexia.github.io/atom.xml" rel="self"/>
   
-  <link href="https://wenkex.gitee.io/"/>
+  <link href="https://wenkexia.github.io/"/>
   <updated>2022-03-01T10:10:33.000Z</updated>
-  <id>https://wenkex.gitee.io/</id>
+  <id>https://wenkexia.github.io/</id>
   
   <author>
     <name>wenke</name>
@@ -18,8 +18,8 @@
   
   <entry>
     <title>window终端</title>
-    <link href="https://wenkex.gitee.io/2022/030155434.html"/>
-    <id>https://wenkex.gitee.io/2022/030155434.html</id>
+    <link href="https://wenkexia.github.io/2022/030155434.html"/>
+    <id>https://wenkexia.github.io/2022/030155434.html</id>
     <published>2022-03-01T10:10:33.000Z</published>
     <updated>2022-03-01T10:10:33.000Z</updated>
     
@@ -34,17 +34,17 @@
     
     
     
-    <category term="工具" scheme="https://wenkex.gitee.io/categories/%E5%B7%A5%E5%85%B7/"/>
+    <category term="工具" scheme="https://wenkexia.github.io/categories/%E5%B7%A5%E5%85%B7/"/>
     
     
-    <category term="待分" scheme="https://wenkex.gitee.io/tags/%E5%BE%85%E5%88%86/"/>
+    <category term="待分" scheme="https://wenkexia.github.io/tags/%E5%BE%85%E5%88%86/"/>
     
   </entry>
   
   <entry>
     <title>四级</title>
-    <link href="https://wenkex.gitee.io/2022/02278414.html"/>
-    <id>https://wenkex.gitee.io/2022/02278414.html</id>
+    <link href="https://wenkexia.github.io/2022/02278414.html"/>
+    <id>https://wenkexia.github.io/2022/02278414.html</id>
     <published>2022-02-27T01:52:55.000Z</published>
     <updated>2022-02-27T01:52:55.000Z</updated>
     
@@ -60,17 +60,17 @@
     
     
     
-    <category term="待分" scheme="https://wenkex.gitee.io/categories/%E5%BE%85%E5%88%86/"/>
+    <category term="待分" scheme="https://wenkexia.github.io/categories/%E5%BE%85%E5%88%86/"/>
     
     
-    <category term="待分" scheme="https://wenkex.gitee.io/tags/%E5%BE%85%E5%88%86/"/>
+    <category term="待分" scheme="https://wenkexia.github.io/tags/%E5%BE%85%E5%88%86/"/>
     
   </entry>
   
   <entry>
     <title>Linux</title>
-    <link href="https://wenkex.gitee.io/2022/022615691.html"/>
-    <id>https://wenkex.gitee.io/2022/022615691.html</id>
+    <link href="https://wenkexia.github.io/2022/022615691.html"/>
+    <id>https://wenkexia.github.io/2022/022615691.html</id>
     <published>2022-02-26T12:50:16.000Z</published>
     <updated>2022-02-26T12:50:16.000Z</updated>
     
@@ -86,17 +86,17 @@
     
     
     
-    <category term="知识" scheme="https://wenkex.gitee.io/categories/%E7%9F%A5%E8%AF%86/"/>
+    <category term="知识" scheme="https://wenkexia.github.io/categories/%E7%9F%A5%E8%AF%86/"/>
     
     
-    <category term="待分" scheme="https://wenkex.gitee.io/tags/%E5%BE%85%E5%88%86/"/>
+    <category term="待分" scheme="https://wenkexia.github.io/tags/%E5%BE%85%E5%88%86/"/>
     
   </entry>
   
   <entry>
     <title>图像相关</title>
-    <link href="https://wenkex.gitee.io/2022/022126260.html"/>
-    <id>https://wenkex.gitee.io/2022/022126260.html</id>
+    <link href="https://wenkexia.github.io/2022/022126260.html"/>
+    <id>https://wenkexia.github.io/2022/022126260.html</id>
     <published>2022-02-21T10:12:31.000Z</published>
     <updated>2022-02-21T10:12:31.000Z</updated>
     
@@ -112,17 +112,17 @@
     
     
     
-    <category term="知识" scheme="https://wenkex.gitee.io/categories/%E7%9F%A5%E8%AF%86/"/>
+    <category term="知识" scheme="https://wenkexia.github.io/categories/%E7%9F%A5%E8%AF%86/"/>
     
     
-    <category term="待分" scheme="https://wenkex.gitee.io/tags/%E5%BE%85%E5%88%86/"/>
+    <category term="待分" scheme="https://wenkexia.github.io/tags/%E5%BE%85%E5%88%86/"/>
     
   </entry>
   
   <entry>
     <title>数据结构</title>
-    <link href="https://wenkex.gitee.io/2022/02191106.html"/>
-    <id>https://wenkex.gitee.io/2022/02191106.html</id>
+    <link href="https://wenkexia.github.io/2022/02191106.html"/>
+    <id>https://wenkexia.github.io/2022/02191106.html</id>
     <published>2022-02-19T04:04:47.000Z</published>
     <updated>2022-02-19T04:04:47.000Z</updated>
     
@@ -137,17 +137,17 @@
     
     
     
-    <category term="知识" scheme="https://wenkex.gitee.io/categories/%E7%9F%A5%E8%AF%86/"/>
+    <category term="知识" scheme="https://wenkexia.github.io/categories/%E7%9F%A5%E8%AF%86/"/>
     
     
-    <category term="待分" scheme="https://wenkex.gitee.io/tags/%E5%BE%85%E5%88%86/"/>
+    <category term="待分" scheme="https://wenkexia.github.io/tags/%E5%BE%85%E5%88%86/"/>
     
   </entry>
   
   <entry>
     <title>微信小程序</title>
-    <link href="https://wenkex.gitee.io/2022/012435506.html"/>
-    <id>https://wenkex.gitee.io/2022/012435506.html</id>
+    <link href="https://wenkexia.github.io/2022/012435506.html"/>
+    <id>https://wenkexia.github.io/2022/012435506.html</id>
     <published>2022-01-24T09:33:43.000Z</published>
     <updated>2022-01-24T09:33:43.000Z</updated>
     
@@ -162,17 +162,17 @@
     
     
     
-    <category term="知识" scheme="https://wenkex.gitee.io/categories/%E7%9F%A5%E8%AF%86/"/>
+    <category term="知识" scheme="https://wenkexia.github.io/categories/%E7%9F%A5%E8%AF%86/"/>
     
     
-    <category term="小程序" scheme="https://wenkex.gitee.io/tags/%E5%B0%8F%E7%A8%8B%E5%BA%8F/"/>
+    <category term="小程序" scheme="https://wenkexia.github.io/tags/%E5%B0%8F%E7%A8%8B%E5%BA%8F/"/>
     
   </entry>
   
   <entry>
     <title>自动化</title>
-    <link href="https://wenkex.gitee.io/2022/012223479.html"/>
-    <id>https://wenkex.gitee.io/2022/012223479.html</id>
+    <link href="https://wenkexia.github.io/2022/012223479.html"/>
+    <id>https://wenkexia.github.io/2022/012223479.html</id>
     <published>2022-01-22T11:35:24.000Z</published>
     <updated>2022-01-22T11:35:24.000Z</updated>
     
@@ -187,17 +187,17 @@
     
     
     
-    <category term="知识" scheme="https://wenkex.gitee.io/categories/%E7%9F%A5%E8%AF%86/"/>
+    <category term="知识" scheme="https://wenkexia.github.io/categories/%E7%9F%A5%E8%AF%86/"/>
     
     
-    <category term="自动化" scheme="https://wenkex.gitee.io/tags/%E8%87%AA%E5%8A%A8%E5%8C%96/"/>
+    <category term="自动化" scheme="https://wenkexia.github.io/tags/%E8%87%AA%E5%8A%A8%E5%8C%96/"/>
     
   </entry>
   
   <entry>
     <title>window操作</title>
-    <link href="https://wenkex.gitee.io/2022/012246677.html"/>
-    <id>https://wenkex.gitee.io/2022/012246677.html</id>
+    <link href="https://wenkexia.github.io/2022/012246677.html"/>
+    <id>https://wenkexia.github.io/2022/012246677.html</id>
     <published>2022-01-22T01:09:49.000Z</published>
     <updated>2022-01-22T01:09:49.000Z</updated>
     
@@ -212,17 +212,17 @@
     
     
     
-    <category term="知识" scheme="https://wenkex.gitee.io/categories/%E7%9F%A5%E8%AF%86/"/>
+    <category term="知识" scheme="https://wenkexia.github.io/categories/%E7%9F%A5%E8%AF%86/"/>
     
     
-    <category term="window" scheme="https://wenkex.gitee.io/tags/window/"/>
+    <category term="window" scheme="https://wenkexia.github.io/tags/window/"/>
     
   </entry>
   
   <entry>
     <title>python自动化办公库</title>
-    <link href="https://wenkex.gitee.io/2022/012151162.html"/>
-    <id>https://wenkex.gitee.io/2022/012151162.html</id>
+    <link href="https://wenkexia.github.io/2022/012151162.html"/>
+    <id>https://wenkexia.github.io/2022/012151162.html</id>
     <published>2022-01-21T13:57:05.000Z</published>
     <updated>2022-01-21T13:57:05.000Z</updated>
     
@@ -238,17 +238,17 @@
     
     
     
-    <category term="python" scheme="https://wenkex.gitee.io/categories/python/"/>
+    <category term="python" scheme="https://wenkexia.github.io/categories/python/"/>
     
     
-    <category term="自动化" scheme="https://wenkex.gitee.io/tags/%E8%87%AA%E5%8A%A8%E5%8C%96/"/>
+    <category term="自动化" scheme="https://wenkexia.github.io/tags/%E8%87%AA%E5%8A%A8%E5%8C%96/"/>
     
   </entry>
   
   <entry>
     <title>hexo主题配置</title>
-    <link href="https://wenkex.gitee.io/2022/01208095.html"/>
-    <id>https://wenkex.gitee.io/2022/01208095.html</id>
+    <link href="https://wenkexia.github.io/2022/01208095.html"/>
+    <id>https://wenkexia.github.io/2022/01208095.html</id>
     <published>2022-01-20T11:19:51.000Z</published>
     <updated>2022-01-20T11:19:51.000Z</updated>
     
@@ -263,17 +263,17 @@
     
     
     
-    <category term="hexo" scheme="https://wenkex.gitee.io/categories/hexo/"/>
+    <category term="hexo" scheme="https://wenkexia.github.io/categories/hexo/"/>
     
     
-    <category term="hexo" scheme="https://wenkex.gitee.io/tags/hexo/"/>
+    <category term="hexo" scheme="https://wenkexia.github.io/tags/hexo/"/>
     
   </entry>
   
   <entry>
     <title>python-anaconda使用</title>
-    <link href="https://wenkex.gitee.io/2022/011846557.html"/>
-    <id>https://wenkex.gitee.io/2022/011846557.html</id>
+    <link href="https://wenkexia.github.io/2022/011846557.html"/>
+    <id>https://wenkexia.github.io/2022/011846557.html</id>
     <published>2022-01-18T04:25:25.000Z</published>
     <updated>2022-01-18T04:25:25.000Z</updated>
     
@@ -288,17 +288,17 @@
     
     
     
-    <category term="python" scheme="https://wenkex.gitee.io/categories/python/"/>
+    <category term="python" scheme="https://wenkexia.github.io/categories/python/"/>
     
     
-    <category term="python" scheme="https://wenkex.gitee.io/tags/python/"/>
+    <category term="python" scheme="https://wenkexia.github.io/tags/python/"/>
     
   </entry>
   
   <entry>
     <title>开车技巧</title>
-    <link href="https://wenkex.gitee.io/2022/011053187.html"/>
-    <id>https://wenkex.gitee.io/2022/011053187.html</id>
+    <link href="https://wenkexia.github.io/2022/011053187.html"/>
+    <id>https://wenkexia.github.io/2022/011053187.html</id>
     <published>2022-01-10T07:33:40.000Z</published>
     <updated>2022-01-10T07:33:40.000Z</updated>
     
@@ -313,17 +313,17 @@
     
     
     
-    <category term="知识" scheme="https://wenkex.gitee.io/categories/%E7%9F%A5%E8%AF%86/"/>
+    <category term="知识" scheme="https://wenkexia.github.io/categories/%E7%9F%A5%E8%AF%86/"/>
     
     
-    <category term="开车" scheme="https://wenkex.gitee.io/tags/%E5%BC%80%E8%BD%A6/"/>
+    <category term="开车" scheme="https://wenkexia.github.io/tags/%E5%BC%80%E8%BD%A6/"/>
     
   </entry>
   
   <entry>
     <title>markdown语法</title>
-    <link href="https://wenkex.gitee.io/2022/010947193.html"/>
-    <id>https://wenkex.gitee.io/2022/010947193.html</id>
+    <link href="https://wenkexia.github.io/2022/010947193.html"/>
+    <id>https://wenkexia.github.io/2022/010947193.html</id>
     <published>2022-01-09T03:24:32.000Z</published>
     <updated>2022-01-09T03:24:32.000Z</updated>
     
@@ -339,17 +339,17 @@
     
     
     
-    <category term="知识" scheme="https://wenkex.gitee.io/categories/%E7%9F%A5%E8%AF%86/"/>
+    <category term="知识" scheme="https://wenkexia.github.io/categories/%E7%9F%A5%E8%AF%86/"/>
     
     
-    <category term="markdown" scheme="https://wenkex.gitee.io/tags/markdown/"/>
+    <category term="markdown" scheme="https://wenkexia.github.io/tags/markdown/"/>
     
   </entry>
   
   <entry>
     <title>vscode使用</title>
-    <link href="https://wenkex.gitee.io/2022/01093653.html"/>
-    <id>https://wenkex.gitee.io/2022/01093653.html</id>
+    <link href="https://wenkexia.github.io/2022/01093653.html"/>
+    <id>https://wenkexia.github.io/2022/01093653.html</id>
     <published>2022-01-09T03:18:05.000Z</published>
     <updated>2022-01-09T03:18:05.000Z</updated>
     
@@ -365,17 +365,17 @@
     
     
     
-    <category term="工具" scheme="https://wenkex.gitee.io/categories/%E5%B7%A5%E5%85%B7/"/>
+    <category term="工具" scheme="https://wenkexia.github.io/categories/%E5%B7%A5%E5%85%B7/"/>
     
     
-    <category term="vscode" scheme="https://wenkex.gitee.io/tags/vscode/"/>
+    <category term="vscode" scheme="https://wenkexia.github.io/tags/vscode/"/>
     
   </entry>
   
   <entry>
     <title>python基础</title>
-    <link href="https://wenkex.gitee.io/2022/010834543.html"/>
-    <id>https://wenkex.gitee.io/2022/010834543.html</id>
+    <link href="https://wenkexia.github.io/2022/010834543.html"/>
+    <id>https://wenkexia.github.io/2022/010834543.html</id>
     <published>2022-01-08T14:30:18.000Z</published>
     <updated>2022-01-08T14:30:18.000Z</updated>
     
@@ -390,17 +390,17 @@
     
     
     
-    <category term="python" scheme="https://wenkex.gitee.io/categories/python/"/>
+    <category term="python" scheme="https://wenkexia.github.io/categories/python/"/>
     
     
-    <category term="python" scheme="https://wenkex.gitee.io/tags/python/"/>
+    <category term="python" scheme="https://wenkexia.github.io/tags/python/"/>
     
   </entry>
   
   <entry>
     <title>AutoJS</title>
-    <link href="https://wenkex.gitee.io/2022/010827358.html"/>
-    <id>https://wenkex.gitee.io/2022/010827358.html</id>
+    <link href="https://wenkexia.github.io/2022/010827358.html"/>
+    <id>https://wenkexia.github.io/2022/010827358.html</id>
     <published>2022-01-08T09:17:39.000Z</published>
     <updated>2022-01-08T09:17:39.000Z</updated>
     
@@ -416,17 +416,17 @@
     
     
     
-    <category term="自动化" scheme="https://wenkex.gitee.io/categories/%E8%87%AA%E5%8A%A8%E5%8C%96/"/>
+    <category term="自动化" scheme="https://wenkexia.github.io/categories/%E8%87%AA%E5%8A%A8%E5%8C%96/"/>
     
     
-    <category term="自动" scheme="https://wenkex.gitee.io/tags/%E8%87%AA%E5%8A%A8/"/>
+    <category term="自动" scheme="https://wenkexia.github.io/tags/%E8%87%AA%E5%8A%A8/"/>
     
   </entry>
   
   <entry>
     <title>鸿蒙开发</title>
-    <link href="https://wenkex.gitee.io/2022/010839456.html"/>
-    <id>https://wenkex.gitee.io/2022/010839456.html</id>
+    <link href="https://wenkexia.github.io/2022/010839456.html"/>
+    <id>https://wenkexia.github.io/2022/010839456.html</id>
     <published>2022-01-08T07:37:55.000Z</published>
     <updated>2022-01-08T07:37:55.000Z</updated>
     
@@ -441,17 +441,17 @@
     
     
     
-    <category term="鸿蒙" scheme="https://wenkex.gitee.io/categories/%E9%B8%BF%E8%92%99/"/>
+    <category term="鸿蒙" scheme="https://wenkexia.github.io/categories/%E9%B8%BF%E8%92%99/"/>
     
     
-    <category term="鸿蒙" scheme="https://wenkex.gitee.io/tags/%E9%B8%BF%E8%92%99/"/>
+    <category term="鸿蒙" scheme="https://wenkexia.github.io/tags/%E9%B8%BF%E8%92%99/"/>
     
   </entry>
   
   <entry>
     <title>HTML</title>
-    <link href="https://wenkex.gitee.io/2022/010854626.html"/>
-    <id>https://wenkex.gitee.io/2022/010854626.html</id>
+    <link href="https://wenkexia.github.io/2022/010854626.html"/>
+    <id>https://wenkexia.github.io/2022/010854626.html</id>
     <published>2022-01-08T05:26:58.000Z</published>
     <updated>2022-01-08T05:26:58.000Z</updated>
     
@@ -467,15 +467,15 @@
     
     
     
-    <category term="前端" scheme="https://wenkex.gitee.io/categories/%E5%89%8D%E7%AB%AF/"/>
+    <category term="前端" scheme="https://wenkexia.github.io/categories/%E5%89%8D%E7%AB%AF/"/>
     
     
   </entry>
   
   <entry>
     <title>学会高效读代码</title>
-    <link href="https://wenkex.gitee.io/2022/010815003.html"/>
-    <id>https://wenkex.gitee.io/2022/010815003.html</id>
+    <link href="https://wenkexia.github.io/2022/010815003.html"/>
+    <id>https://wenkexia.github.io/2022/010815003.html</id>
     <published>2022-01-08T01:17:14.000Z</published>
     <updated>2022-01-08T01:17:14.000Z</updated>
     
@@ -490,17 +490,17 @@
     
     
     
-    <category term="知识" scheme="https://wenkex.gitee.io/categories/%E7%9F%A5%E8%AF%86/"/>
+    <category term="知识" scheme="https://wenkexia.github.io/categories/%E7%9F%A5%E8%AF%86/"/>
     
     
-    <category term="效率" scheme="https://wenkex.gitee.io/tags/%E6%95%88%E7%8E%87/"/>
+    <category term="效率" scheme="https://wenkexia.github.io/tags/%E6%95%88%E7%8E%87/"/>
     
   </entry>
   
   <entry>
     <title>内网穿透</title>
-    <link href="https://wenkex.gitee.io/2022/01086932.html"/>
-    <id>https://wenkex.gitee.io/2022/01086932.html</id>
+    <link href="https://wenkexia.github.io/2022/01086932.html"/>
+    <id>https://wenkexia.github.io/2022/01086932.html</id>
     <published>2022-01-08T00:23:00.000Z</published>
     <updated>2022-01-08T00:23:58.000Z</updated>
     
@@ -515,10 +515,10 @@
     
     
     
-    <category term="知识" scheme="https://wenkex.gitee.io/categories/%E7%9F%A5%E8%AF%86/"/>
+    <category term="知识" scheme="https://wenkexia.github.io/categories/%E7%9F%A5%E8%AF%86/"/>
     
     
-    <category term="待分" scheme="https://wenkex.gitee.io/tags/%E5%BE%85%E5%88%86/"/>
+    <category term="待分" scheme="https://wenkexia.github.io/tags/%E5%BE%85%E5%88%86/"/>
     
   </entry>
   
