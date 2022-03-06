@@ -1,1 +1,164 @@
-"use strict";function _toConsumableArray(e){return _arrayWithoutHoles(e)||_iterableToArray(e)||_unsupportedIterableToArray(e)||_nonIterableSpread()}function _nonIterableSpread(){throw new TypeError("Invalid attempt to spread non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.")}function _unsupportedIterableToArray(e,t){if(e){if("string"==typeof e)return _arrayLikeToArray(e,t);var r=Object.prototype.toString.call(e).slice(8,-1);return"Map"===(r="Object"===r&&e.constructor?e.constructor.name:r)||"Set"===r?Array.from(e):"Arguments"===r||/^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(r)?_arrayLikeToArray(e,t):void 0}}function _iterableToArray(e){if("undefined"!=typeof Symbol&&null!=e[Symbol.iterator]||null!=e["@@iterator"])return Array.from(e)}function _arrayWithoutHoles(e){if(Array.isArray(e))return _arrayLikeToArray(e)}function _arrayLikeToArray(e,t){(null==t||t>e.length)&&(t=e.length);for(var r=0,a=new Array(t);r<t;r++)a[r]=e[r];return a}window.addEventListener("load",function(){function e(){var e=document.body.style;e.width="100%",e.overflow="hidden",btf.animateIn(document.getElementById("search-mask"),"to_show 0.5s"),btf.animateIn(document.querySelector("#local-search .search-dialog"),"titleScale 0.5s"),setTimeout(function(){document.querySelector("#local-search-input input").focus()},100),r||(async function(e){var t=[],r=e.split(".")[1],e=await fetch(GLOBAL_CONFIG.root+e);"json"===r?t=await e.json():"xml"===r&&(r=await e.text(),r=await await(new window.DOMParser).parseFromString(r,"text/xml"),t=[].concat(_toConsumableArray(r.querySelectorAll("entry"))).map(function(e){return{title:e.querySelector("title").textContent,content:e.querySelector("content").textContent,url:e.querySelector("url").textContent}}));e.ok&&((a=document.getElementById("loading-database")).nextElementSibling.style.display="block",a.remove());var a=document.querySelector("#local-search-input input"),n=document.getElementById("local-search-results"),o=document.getElementById("loading-status");a.addEventListener("input",function(){var d=this.value.trim().toLowerCase().split(/[\s]+/);""!==d[0]&&(o.innerHTML='<i class="fas fa-spinner fa-pulse"></i>'),n.innerHTML="";var y,m='<div class="search-result-list">';this.value.trim().length<=0||(y=0,t.forEach(function(e){var r=!0;e.title&&""!==e.title.trim()||(e.title="");var a,t,n,o,l=e.title.trim().toLowerCase(),i=e.content?e.content.trim().replace(/<[^>]+>/g,"").toLowerCase():"",c=e.url.startsWith("/")?e.url:GLOBAL_CONFIG.root+e.url,s=-1,u=-1;""!==l||""!==i?d.forEach(function(e,t){a=l.indexOf(e),s=i.indexOf(e),a<0&&s<0?r=!1:(s<0&&(s=0),0===t&&(u=s))}):r=!1,r&&(t=e.content.trim().replace(/<[^>]+>/g,""),0<=u&&(n=u+100,(n=0===(e=(e=u-30)<0?0:e)?100:n)>t.length&&(n=t.length),o=t.substring(e,n),d.forEach(function(e){var t=new RegExp(e,"gi");o=o.replace(t,'<span class="search-keyword">'+e+"</span>"),l=l.replace(t,'<span class="search-keyword">'+e+"</span>")}),m+='<div class="local-search__hit-item"><a href="'+c+'" class="search-result-title">'+l+"</a>",y+=1,""!==i&&(m+='<p class="search-result">'+o+"...</p>")),m+="</div>")}),0===y&&(m+='<div id="local-search__hits-empty">'+GLOBAL_CONFIG.localSearch.languages.hits_empty.replace(/\$\{query}/,this.value.trim())+"</div>"),m+="</div>",n.innerHTML=m,""!==d[0]&&(o.innerHTML=""),window.pjax&&window.pjax.refresh(n))})}(GLOBAL_CONFIG.localSearch.path),r=!0),document.addEventListener("keydown",function e(t){"Escape"===t.code&&(a(),document.removeEventListener("keydown",e))})}function t(){document.querySelector("#search-button > .search").addEventListener("click",e),document.getElementById("search-mask").addEventListener("click",a),document.querySelector("#local-search .search-close-button").addEventListener("click",a)}var r=!1,a=function(){var e=document.body.style;e.width="",e.overflow="",btf.animateOut(document.querySelector("#local-search .search-dialog"),"search_close .5s"),btf.animateOut(document.getElementById("search-mask"),"to_hide 0.5s")};t(),window.addEventListener("pjax:complete",function(){"block"===getComputedStyle(document.querySelector("#local-search .search-dialog")).display&&a(),t()})});
+window.addEventListener('load', () => {
+  let loadFlag = false
+  const openSearch = () => {
+    const bodyStyle = document.body.style
+    bodyStyle.width = '100%'
+    bodyStyle.overflow = 'hidden'
+    btf.animateIn(document.getElementById('search-mask'), 'to_show 0.5s')
+    btf.animateIn(document.querySelector('#local-search .search-dialog'), 'titleScale 0.5s')
+    setTimeout(() => { document.querySelector('#local-search-input input').focus() }, 100)
+    if (!loadFlag) {
+      search(GLOBAL_CONFIG.localSearch.path)
+      loadFlag = true
+    }
+    // shortcut: ESC
+    document.addEventListener('keydown', function f (event) {
+      if (event.code === 'Escape') {
+        closeSearch()
+        document.removeEventListener('keydown', f)
+      }
+    })
+  }
+
+  const closeSearch = () => {
+    const bodyStyle = document.body.style
+    bodyStyle.width = ''
+    bodyStyle.overflow = ''
+    btf.animateOut(document.querySelector('#local-search .search-dialog'), 'search_close .5s')
+    btf.animateOut(document.getElementById('search-mask'), 'to_hide 0.5s')
+  }
+
+  // click function
+  const searchClickFn = () => {
+    document.querySelector('#search-button > .search').addEventListener('click', openSearch)
+    document.getElementById('search-mask').addEventListener('click', closeSearch)
+    document.querySelector('#local-search .search-close-button').addEventListener('click', closeSearch)
+  }
+
+  searchClickFn()
+
+  // pjax
+  window.addEventListener('pjax:complete', function () {
+    getComputedStyle(document.querySelector('#local-search .search-dialog')).display === 'block' && closeSearch()
+    searchClickFn()
+  })
+
+  async function search (path) {
+    let datas = []
+    const typeF = path.split('.')[1]
+    const response = await fetch(GLOBAL_CONFIG.root + path)
+    if (typeF === 'json') {
+      datas = await response.json()
+    } else if (typeF === 'xml') {
+      const res = await response.text()
+      const t = await new window.DOMParser().parseFromString(res, 'text/xml')
+      const a = await t
+      datas = [...a.querySelectorAll('entry')].map(function (item) {
+        return {
+          title: item.querySelector('title').textContent,
+          content: item.querySelector('content').textContent,
+          url: item.querySelector('url').textContent
+        }
+      })
+    }
+    if (response.ok) {
+      const $loadDataItem = document.getElementById('loading-database')
+      $loadDataItem.nextElementSibling.style.display = 'block'
+      $loadDataItem.remove()
+    }
+
+    const $input = document.querySelector('#local-search-input input')
+    const $resultContent = document.getElementById('local-search-results')
+    const $loadingStatus = document.getElementById('loading-status')
+    $input.addEventListener('input', function () {
+      const keywords = this.value.trim().toLowerCase().split(/[\s]+/)
+      if (keywords[0] !== '') $loadingStatus.innerHTML = '<i class="fas fa-spinner fa-pulse"></i>'
+
+      $resultContent.innerHTML = ''
+      let str = '<div class="search-result-list">'
+      if (this.value.trim().length <= 0) return
+      let count = 0
+      // perform local searching
+      datas.forEach(function (data) {
+        let isMatch = true
+        if (!data.title || data.title.trim() === '') {
+          data.title = ''
+        }
+        let dataTitle = data.title.trim().toLowerCase()
+        const dataContent = data.content ? data.content.trim().replace(/<[^>]+>/g, '').toLowerCase() : ''
+        const dataUrl = data.url.startsWith('/') ? data.url : GLOBAL_CONFIG.root + data.url
+        let indexTitle = -1
+        let indexContent = -1
+        let firstOccur = -1
+        // only match artiles with not empty titles and contents
+        if (dataTitle !== '' || dataContent !== '') {
+          keywords.forEach(function (keyword, i) {
+            indexTitle = dataTitle.indexOf(keyword)
+            indexContent = dataContent.indexOf(keyword)
+            if (indexTitle < 0 && indexContent < 0) {
+              isMatch = false
+            } else {
+              if (indexContent < 0) {
+                indexContent = 0
+              }
+              if (i === 0) {
+                firstOccur = indexContent
+              }
+            }
+          })
+        } else {
+          isMatch = false
+        }
+
+        // show search results
+        if (isMatch) {
+          const content = data.content.trim().replace(/<[^>]+>/g, '')
+          if (firstOccur >= 0) {
+            // cut out 130 characters
+            // let start = firstOccur - 30 < 0 ? 0 : firstOccur - 30
+            // let end = firstOccur + 50 > content.length ? content.length : firstOccur + 50
+            let start = firstOccur - 30
+            let end = firstOccur + 100
+
+            if (start < 0) {
+              start = 0
+            }
+
+            if (start === 0) {
+              end = 100
+            }
+
+            if (end > content.length) {
+              end = content.length
+            }
+
+            let matchContent = content.substring(start, end)
+
+            // highlight all keywords
+            keywords.forEach(function (keyword) {
+              const regS = new RegExp(keyword, 'gi')
+              matchContent = matchContent.replace(regS, '<span class="search-keyword">' + keyword + '</span>')
+              dataTitle = dataTitle.replace(regS, '<span class="search-keyword">' + keyword + '</span>')
+            })
+
+            str += '<div class="local-search__hit-item"><a href="' + dataUrl + '" class="search-result-title">' + dataTitle + '</a>'
+            count += 1
+
+            if (dataContent !== '') {
+              str += '<p class="search-result">' + matchContent + '...</p>'
+            }
+          }
+          str += '</div>'
+        }
+      })
+      if (count === 0) {
+        str += '<div id="local-search__hits-empty">' + GLOBAL_CONFIG.localSearch.languages.hits_empty.replace(/\$\{query}/, this.value.trim()) +
+          '</div>'
+      }
+      str += '</div>'
+      $resultContent.innerHTML = str
+      if (keywords[0] !== '') $loadingStatus.innerHTML = ''
+      window.pjax && window.pjax.refresh($resultContent)
+    })
+  }
+})
