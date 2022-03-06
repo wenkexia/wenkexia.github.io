@@ -245,31 +245,6 @@
   </entry>
   
   <entry>
-    <title>python-anaconda使用</title>
-    <link href="https://wenkexia.github.io/2022/011846557.html"/>
-    <id>https://wenkexia.github.io/2022/011846557.html</id>
-    <published>2022-01-18T04:25:25.000Z</published>
-    <updated>2022-01-18T04:25:25.000Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h1 id=&quot;介绍&quot;&gt;&lt;a href=&quot;#介绍&quot; class=&quot;headerlink&quot; title=&quot;介绍&quot;&gt;&lt;/a&gt;介绍&lt;/h1&gt;&lt;p&gt;Anaconda 是一个用于python/R科学计算和机器学习的开源工具(也称为Python的一种发行版)，支持 Linux,</summary>
-        
-      
-    
-    
-    
-    <category term="python" scheme="https://wenkexia.github.io/categories/python/"/>
-    
-    
-    <category term="python" scheme="https://wenkexia.github.io/tags/python/"/>
-    
-  </entry>
-  
-  <entry>
     <title>markdown语法</title>
     <link href="https://wenkexia.github.io/2022/010947193.html"/>
     <id>https://wenkexia.github.io/2022/010947193.html</id>
@@ -333,7 +308,8 @@
       
         
         
-    <summary type="html">&lt;h1 id=&quot;pythontutor&quot;&gt;&lt;a href=&quot;#pythontutor&quot; class=&quot;headerlink&quot; title=&quot;pythontutor&quot;&gt;&lt;/a&gt;pythontutor&lt;/h1&gt;&lt;p&gt;&lt;a</summary>
+    <summary type="html">&lt;p&gt;&lt;a href=&quot;https://gitee.com/wenkex/python&quot;&gt;我的gittee中的python仓库&lt;/a&gt;&lt;/p&gt;
+&lt;h1 id=&quot;pythontutor&quot;&gt;&lt;a href=&quot;#pythontutor&quot; class=&quot;headerlink&quot;</summary>
         
       
     
@@ -518,6 +494,31 @@
     
     
     <category term="容器" scheme="https://wenkexia.github.io/tags/%E5%AE%B9%E5%99%A8/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>软件</title>
+    <link href="https://wenkexia.github.io/2022/010422249.html"/>
+    <id>https://wenkexia.github.io/2022/010422249.html</id>
+    <published>2022-01-04T10:10:17.000Z</published>
+    <updated>2022-01-04T10:10:17.000Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;window软件&quot;&gt;&lt;a href=&quot;#window软件&quot; class=&quot;headerlink&quot; title=&quot;window软件&quot;&gt;&lt;/a&gt;window软件&lt;/h1&gt;&lt;h2 id=&quot;everything&quot;&gt;&lt;a href=&quot;#everything&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="工具" scheme="https://wenkexia.github.io/categories/%E5%B7%A5%E5%85%B7/"/>
+    
+    
+    <category term="软件" scheme="https://wenkexia.github.io/tags/%E8%BD%AF%E4%BB%B6/"/>
     
   </entry>
   
