@@ -1,0 +1,492 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"><title>java基本数据结构 | wenke</title><meta name="keywords" content="HTML,CSS,JavaScript,JQuery,React,Vue.js等"><meta name="author" content="wenke"><meta name="copyright" content="wenke"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="1. 基本数据类型   数据类型 名称 内存大小(B) 注：1B &#x3D; 8b    byte 字节型 1   short 字符型 2   int 短整型 4   long 整型 8   float 单精度浮点型 4   double 双精度浮点型 8   char 字符型 2   boolean 布尔 不同情况下不同   1.1. 整数型 short型（短整型）数据在内存中占用2个字节 long型（">
+<meta property="og:type" content="article">
+<meta property="og:title" content="java基本数据结构">
+<meta property="og:url" content="https://wenkex.gitee.io/2022/101950914.html">
+<meta property="og:site_name" content="wenke">
+<meta property="og:description" content="1. 基本数据类型   数据类型 名称 内存大小(B) 注：1B &#x3D; 8b    byte 字节型 1   short 字符型 2   int 短整型 4   long 整型 8   float 单精度浮点型 4   double 双精度浮点型 8   char 字符型 2   boolean 布尔 不同情况下不同   1.1. 整数型 short型（短整型）数据在内存中占用2个字节 long型（">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://wenkex.gitee.io/img/top.jpg">
+<meta property="article:published_time" content="2022-10-19T01:07:00.000Z">
+<meta property="article:modified_time" content="2022-10-19T01:43:13.291Z">
+<meta property="article:author" content="wenke">
+<meta property="article:tag" content="HTML">
+<meta property="article:tag" content="CSS">
+<meta property="article:tag" content="JavaScript">
+<meta property="article:tag" content="JQuery">
+<meta property="article:tag" content="React">
+<meta property="article:tag" content="Vue.js等">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://wenkex.gitee.io/img/top.jpg"><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="https://wenkex.gitee.io/2022/101950914"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//hm.baidu.com"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/node-snackbar/dist/snackbar.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.min.css" media="print" onload="this.media='all'"><script>var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?d103aef22d2746c3d56e2dae461c4699";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script><link rel="stylesheet" href="/Arts" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: {"path":"/search.xml","preload":false,"languages":{"hits_empty":"找不到您查询的内容：${query}"}},
+  translate: {"defaultEncoding":1,"translateDelay":0,"msgToTraditionalChinese":"繁","msgToSimplifiedChinese":"簡"},
+  noticeOutdate: {"limitDay":365,"position":"top","messagePrev":"距离上次更新已经过了","messageNext":"天， 文章内容可能已过期，请留意"},
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '天',
+  date_suffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: {"limitCount":1000,"languages":{"author":"作者: wenke","link":"链接: ","source":"来源: wenke","info":"著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。"}},
+  lightbox: 'fancybox',
+  Snackbar: {"chs_to_cht":"你已切换为繁体","cht_to_chs":"你已切换为简体","day_to_night":"你已切换为深色模式","night_to_day":"你已切换为浅色模式","bgLight":"#49b1f5","bgDark":"#121212","position":"bottom-left"},
+  source: {
+    justifiedGallery: {
+      js: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.css'
+    }
+  },
+  isPhotoFigcaption: false,
+  islazyload: true,
+  isAnchor: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: 'java基本数据结构',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  postUpdate: '2022-10-19 09:43:13'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
+
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
+
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
+      }
+    }
+  
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
+  
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          if (t === 'dark') activateDarkMode()
+          else if (t === 'light') activateLightMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+    const detectApple = () => {
+      if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+    })(window)</script><meta name="generator" content="Hexo 6.0.0">
+<style>.github-emoji { position: relative; display: inline-block; width: 1.2em; min-height: 1.2em; overflow: hidden; vertical-align: top; color: transparent; }  .github-emoji > span { position: relative; z-index: 10; }  .github-emoji img, .github-emoji .fancybox { margin: 0 !important; padding: 0 !important; border: none !important; outline: none !important; text-decoration: none !important; user-select: none !important; cursor: auto !important; }  .github-emoji img { height: 1.2em !important; width: 1.2em !important; position: absolute !important; left: 50% !important; top: 50% !important; transform: translate(-50%, -50%) !important; user-select: none !important; cursor: auto !important; } .github-emoji-fallback { color: inherit; } .github-emoji-fallback img { opacity: 0 !important; }</style>
+<link rel="alternate" href="/atom.xml" title="wenke" type="application/atom+xml">
+<link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css">
+<link rel="stylesheet" href="/css/prism-line-numbers.css" type="text/css"></head><body><div id="loading-box"><div class="loading-left-bg"></div><div class="loading-right-bg"></div><div class="spinner-box"><div class="configure-border-1"><div class="configure-core"></div></div><div class="configure-border-2"><div class="configure-core"></div></div><div class="loading-word">加载中...</div></div></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAASwAAAEsCAMAAABOo35HAAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAC9UExURVlZWdPT07KysmRkZIWFhfT09JmZmWZmZm9vb39/fxkZGUxMTDMzM3p6epCQkKamppubm729venp6cjIyN7e3tbW1s/Pz8LCwnx8fLS0tFZWVoiIiI+Pj6GhoeTk5Glpabu7u93d3evr66CgoJSUlKqqqsnJyeDg4Hd3d8PDw+Xl5bi4uNHR0dvb26Ojo6urq+fn51hYWDg4OCgoKHBwcK2traenp0FBQe7u7vHx8U5OTre3t8zMzHV1df///7GrnpQAAAA/dFJOU///////////////////////////////////////////////////////////////////////////////////AI4mfBcAAAUGSURBVHja7NoJb6M4GMZxY0NCD64kve/pMZ2d3Z297+X7f6zFNmBAMUXa6URl/q9UJSWPUPzrizFWRUlNLgEBWGCBBRZYYEEAFlhggQUWWBCABRZYYIEFFgRggQUWWGCBBQFYYIEFFlhgQQAWWGCBBRZYEIAFFlhggQUWBGCBBRZYYIEFAVhggQUWWGBBABZYYIEFFlgQgAUWWGCBBRYEYIEFFlhggQUBWGCBBRZYYEEAFlhggQUWWBCABRZYYIEFFgRggQUWWGCBBQFYYIEFFlhgQQAWWGCBBRZYEIAFFlhggQUWBGCBBRZYn6cCIcRXgvX/h9qcIVBqDdbEM8RCxGCB9QqXYRwHYDHBgwXWl8eKZKiESHI3Ba1kWs3fKixcaJUl1YyeBm7Ocq+yLItUiVBGnXxenSHJolIKEcwHq6ikbOX1YGVzQCTN8LPmSLreghUl9sN4Uw7yajMrLC0TZ1ImzqY6FEop0+pIaEN5HaoOxVuwEqFyc4I46uSlzOLqgxlh6UaR9l3VYWl9Fdoxb1Q90KJtu41pwwFW/WHhTtW8i7TafLCqRsk6bsGw63L9qurXRmuIlbT9lDQnlXU+nBFW1Q2qnZbDprWa2tjR90LZFqx1/+Td/HpGWLlrLDvIwTcx6dQ1Vrntbig68cDms3JwbA5Y1azs1ger6sNV/bbIw1jU81MvNAGrl58RVn8ozW+btF08iGFoAlYvP3csfVur1gJBEIA1uBmue5dhZDOyO2epbmgCVi8/I6x0MMHH9pjsTfBhNzQBq5uPZoQlB0uH3DZG4EZqQ26fL3sZq5uf09Ih6qw3i/pm6BZO0qZX7rrUS68Xsbr5ZE4rePMk08pk9aUZugfqppvs6AM1Acvlo/StP+6EbW06z8hJqxbYp2BZPQUnFsLsKuhQdaHqn5ewbF7KXIn0jWO5MqOQ7RaNLPtbNMmmhimj0GUmYLl8Gs0Lq4wyPbTu1l2QKqHSouzs3OlDIslW5SQsnY/NXmFplyNvEuuLV/Tau9BzwiraDUSwXmysztYWWNtL1psXeumgIrDGaqXvBfUuvtqUYI3V2t1wk1e2msFluJJm6zDJXv/fIfjPP7DAAgsssCiwwAILLLDAosACCyywwAKLAgsssMACC6zt9fDz/v75tyOB+98PD2+ORgKffjw4OP1uJPDxl+Xy8v1I4MPF3t7VNyOB4/vF4uzdzrG+39f1kz/w66Guv/yBvw90KX/gZKkr8Qf+2dOV+gNHC12/7RxrabD2/a31bLAO/a11YbAO/K21MFhLf2s9Gqw9f2vdGqzFu11jnVusE2/gxmI9eQOnFuvYG7i0WH7uK4t15w2cWazrXWP9a7H8f/bQYvm/6IPF+sF/pVssf19Ii/WH/0K2WH/uGuvEWC39gSdj9Twy+Rqri5EZx1gt/IE7Y/XoD1wbq9vd3w1PlufnD2OBp+ebm/uxwPHF6emnscDR4vLy41jg7vHq6sNY4Pr27OyYdRaLUrDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssL6u+k+AAQCR9eHtLKvLfwAAAABJRU5ErkJggg==" data-original="/img/me.jpg" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">53</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">39</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">12</div></a></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-book-open"></i><span> 文章</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></li><li><a class="site-page child" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></li><li><a class="site-page child" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 时间轴</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/box/"><i class="fa-fw fas fa-tags"></i><span> 聚合</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div><div class="menus_item"><a class="site-page" href="/gallery/"><i class="fa-fw fas fa-heart"></i><span> 相册</span></a></div><div class="menus_item"><a class="site-page" href="/contact/"><i class="fa-fw fas fa-list"></i><span> 留言板</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url('/img/top.jpg')"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">wenke</a></span><div id="menus"><div id="search-button"><a class="site-page social-icon search"><i class="fas fa-search fa-fw"></i><span> 搜索</span></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-book-open"></i><span> 文章</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></li><li><a class="site-page child" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></li><li><a class="site-page child" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 时间轴</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/box/"><i class="fa-fw fas fa-tags"></i><span> 聚合</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div><div class="menus_item"><a class="site-page" href="/gallery/"><i class="fa-fw fas fa-heart"></i><span> 相册</span></a></div><div class="menus_item"><a class="site-page" href="/contact/"><i class="fa-fw fas fa-list"></i><span> 留言板</span></a></div></div><div id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">java基本数据结构</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2022-10-19T01:07:00.000Z" title="发表于 2022-10-19 09:07:00">2022-10-19</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2022-10-19T01:43:13.291Z" title="更新于 2022-10-19 09:43:13">2022-10-19</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/Java/">Java</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-wordcount"><i class="far fa-file-word fa-fw post-meta-icon"></i><span class="post-meta-label">字数总计:</span><span class="word-count">4.8k</span><span class="post-meta-separator">|</span><i class="far fa-clock fa-fw post-meta-icon"></i><span class="post-meta-label">阅读时长:</span><span>16分钟</span></span><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="java基本数据结构"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">阅读量:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><h2 id="1-基本数据类型"><a href="#1-基本数据类型" class="headerlink" title="1. 基本数据类型"></a>1. 基本数据类型</h2><table>
+<thead>
+<tr>
+<th>数据类型</th>
+<th>名称</th>
+<th>内存大小(B) 注：1B = 8b</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>byte</td>
+<td>字节型</td>
+<td>1</td>
+</tr>
+<tr>
+<td>short</td>
+<td>字符型</td>
+<td>2</td>
+</tr>
+<tr>
+<td>int</td>
+<td>短整型</td>
+<td>4</td>
+</tr>
+<tr>
+<td>long</td>
+<td>整型</td>
+<td>8</td>
+</tr>
+<tr>
+<td>float</td>
+<td>单精度浮点型</td>
+<td>4</td>
+</tr>
+<tr>
+<td>double</td>
+<td>双精度浮点型</td>
+<td>8</td>
+</tr>
+<tr>
+<td>char</td>
+<td>字符型</td>
+<td>2</td>
+</tr>
+<tr>
+<td>boolean</td>
+<td>布尔</td>
+<td>不同情况下不同</td>
+</tr>
+</tbody></table>
+<h3 id="1-1-整数型"><a href="#1-1-整数型" class="headerlink" title="1.1. 整数型"></a>1.1. 整数型</h3><ul>
+<li>short型（短整型）数据在内存中占用2个字节</li>
+<li>long型（长整型）数据在内存中占用8个字节。需要加l后缀<code>long num = 123L</code></li>
+<li>int型（整型）数据在内存中占用4个字节。</li>
+<li>byte型（字节型）数据在内存中占用1个字节，表示的存储数据范围为：-128~127。</li>
+</ul>
+<h3 id="1-2-浮点型"><a href="#1-2-浮点型" class="headerlink" title="1.2. 浮点型"></a>1.2. 浮点型</h3><ul>
+<li>float型（单精度浮点型）数据在内存中占用4个字节。<br>  float t = 3.1f<pre><code>  f转为double型
+</code></pre>
+</li>
+<li>double型（双精度浮点型）数据在内存中占用8个字节。<br>  一般小数默认是double型</li>
+</ul>
+<h3 id="1-3-布尔型-boolean"><a href="#1-3-布尔型-boolean" class="headerlink" title="1.3. 布尔型(boolean)"></a>1.3. 布尔型(boolean)</h3><p>boolean：数据值只有true或false，适用于逻辑计算。</p>
+<h3 id="1-4-字符型-char"><a href="#1-4-字符型-char" class="headerlink" title="1.4. 字符型(char)"></a>1.4. 字符型(char)</h3><p>char每个字符占2个字节，定义时用单引号’ ‘<br>char类型的变量在参与计算时，类型自动提升为Int,查询ascii码表</p>
+<p>A的ASCII码是65，a的ASCII码是97。</p>
+<p>小写字母的ASCII码是大写字母的ASCII码数值+32。</p>
+<figure class="highlight java"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//char将整数转换为对应的字符</span></span><br><span class="line">(<span class="keyword">char</span>) (<span class="number">6</span>+ <span class="string">'a'</span>);</span><br></pre></td></tr></tbody></table></figure>
+<h2 id="2-内置包装类"><a href="#2-内置包装类" class="headerlink" title="2. 内置包装类"></a>2. 内置包装类</h2><p>在 Java 的设计中提倡一种思想，即一切皆对象。但是从数据类型的划分中，我们知道 Java 中的数据类型分为基本数据类型和引用数据类型，但是基本数据类型怎么能够称为对象呢？于是 Java 为每种基本数据类型分别设计了对应的类，称之为包装类（Wrapper Classes），也有地方称为外覆类或数据类型类。<br>| ****   | ****       |<br>|:——:|:———-:|<br>| 基本数据类型 | 包装类        |<br>| byte   | Byte       |<br>| short  | Short      |<br>| int    | Integer    |<br>| long   | Long       |<br>| char   | Character  |<br>| float  | Float      |<br>| double | Double     |<br>|boolean |  Boolean   |</p>
+<h3 id="2-1-装箱和拆箱"><a href="#2-1-装箱和拆箱" class="headerlink" title="2.1. 装箱和拆箱"></a>2.1. 装箱和拆箱</h3><p>基本数据类型转换为包装类的过程称为装箱，例如把 int 包装成 Integer 类的对象；<br>包装类变为基本数据类型的过程称为拆箱，例如把 Integer 类的对象重新简化为 int。</p>
+<p>手动实例化一个包装类称为手动拆箱装箱。Java 1.5 版本之前必须手动拆箱装箱，之后可以自动拆箱装箱，也就是在进行基本数据类型和对应的包装类转换时，系统将自动进行装箱及拆箱操作，不用在进行手工操作</p>
+<h3 id="2-2-Integer"><a href="#2-2-Integer" class="headerlink" title="2.2. Integer"></a>2.2. Integer</h3><table>
+<thead>
+<tr>
+<th>方法</th>
+<th>返回值</th>
+<th>功能</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>byteValue()</td>
+<td>byte</td>
+<td>以 byte 类型返回该 Integer 的值</td>
+</tr>
+<tr>
+<td>shortValue()</td>
+<td>short</td>
+<td>以 short 类型返回该 Integer 的值</td>
+</tr>
+<tr>
+<td>intValue()</td>
+<td>int</td>
+<td>以 int 类型返回该 Integer 的值</td>
+</tr>
+<tr>
+<td>toString()</td>
+<td>String</td>
+<td>返回一个表示该 Integer 值的 String 对象</td>
+</tr>
+<tr>
+<td>equals(Object obj)</td>
+<td>boolean</td>
+<td>比较此对象与指定对象是否相等</td>
+</tr>
+<tr>
+<td>compareTo(Integer anotherlnteger)</td>
+<td>int</td>
+<td>在数字上比较两个 Integer 对象如相等返回 0；如调用对象的数值小于 anotherlnteger 的数值，则返回负值；</td>
+</tr>
+<tr>
+<td>valueOf(String s)</td>
+<td>Integer</td>
+<td>返回保存指定的 String 值的 Integer 对象</td>
+</tr>
+<tr>
+<td>parseInt(String s)</td>
+<td>int</td>
+<td>将数字字符串转换为 int 数值</td>
+</tr>
+</tbody></table>
+<figure class="highlight java"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//字符串转为int</span></span><br><span class="line">Integer.parseInt(<span class="string">"1234"</span>)</span><br><span class="line">	</span><br></pre></td></tr></tbody></table></figure>
+
+<h3 id="2-3-Character-类"><a href="#2-3-Character-类" class="headerlink" title="2.3. Character 类"></a>2.3. Character 类</h3><p>Character 类用于对单个字符进行操作。</p>
+<p>Character 类在对象中包装一个基本类型 char 的值</p>
+<p>在实际开发过程中，我们经常会遇到需要使用对象，而不是内置数据类型的情况。为了解决这个问题，Java语言为内置数据类型char提供了包装类Character类。</p>
+<figure class="highlight java"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Character ch = <span class="keyword">new</span> Character(<span class="string">'a'</span>);  <span class="comment">//创建一个Character类对象</span></span><br></pre></td></tr></tbody></table></figure>
+
+<p>Character类的方法<br>    1.isLetter()是否是一个字母<br>    2.isDigit()是否是一个数字字符<br>    3.isWhitespace()是否是一个空白字符<br>    4.isUpperCase()是否是大写字母<br>    5.isLowerCase()是否是小写字母<br>    6.toUpperCase()指定字母的大写形式<br>    7.toLowerCase()指定字母的小写形式<br>    8.toString()返回字符的字符串形式，字符串的长度仅为1</p>
+<p>在某些情况下，Java编译器会自动创建一个Character对象。</p>
+<p>例如，将一个char类型的参数传递给需要一个Character类型参数的方法时，那么编译器会自动地将char类型参数转换为Character对象。 这种特征称为装箱，反过来称为拆箱。</p>
+<h2 id="3-引用数据类型"><a href="#3-引用数据类型" class="headerlink" title="3. 引用数据类型"></a>3. 引用数据类型</h2><p>引用数据类型有：类、接口类型、数组类型、String类型，枚举类型、注解类型。</p>
+<p>区别</p>
+<p>1.基本数据类型在被创建时，在栈上给其划分一块内存，将数值直接存储在栈上。<br>2.引用数据类型在被创建时，首先要在栈上给其引用（句柄）分配一块内存，而对象的具体信息都存储在堆内存上，然后由栈上面的引用指向堆中对象的地址。</p>
+<p>3.在数据做为参数传递的时候，基本数据类型是值传递，而引用数据类型是引用传递（地址传递）。</p>
+<h3 id="3-1-null"><a href="#3-1-null" class="headerlink" title="3.1. null"></a>3.1. null</h3><p>引用类型的0值 就是 null.</p>
+<p>当我们将 null 赋给arr 这个引用类型时，代表 arr 这个引用，不指向任何对象.<br>null.任何东西，都会发生空指针异常的错误。例如<code>int[] arr =null;</code><br>这是因为null 赋给了 arr ，arr 没有指向任何一个数组对象，在堆上也没有开辟内存空间，所以我们也就无法求它的长度.</p>
+<h2 id="4-String字符串类"><a href="#4-String字符串类" class="headerlink" title="4. String字符串类"></a>4. String字符串类</h2><h3 id="4-1-创建字符串"><a href="#4-1-创建字符串" class="headerlink" title="4.1. 创建字符串"></a>4.1. 创建字符串</h3><p>String 字符串是一种不可变对象，一旦创建了 String 对象，那它的值就无法改变了。如果想对字符串做修改，需要使用StringBuffer&amp;StringBuilder类。<br>一旦String对象被创建并初始化后，内部的状态数据就会保持不变</p>
+<figure class="highlight java"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//1.直接创建方式 创建的字符串存储在公共池中，而 new 创建的字符串对象在堆上：</span></span><br><span class="line">String str = <span class="string">"Runoob"</span>;    <span class="comment">//首先在堆内存上的串池中查找是否存在该字符串，没有则创建，并将地址赋给在栈内存中的对应变量；有则复用</span></span><br><span class="line">String str2=<span class="keyword">new</span> String (<span class="string">"Runoob"</span>);  <span class="comment">//每次new都在堆内存中重新开辟新空间</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// 传递一个字符数组，根据字符数组的内容再创建一个新的字符串对象,需要修改字符串时使用</span></span><br><span class="line"><span class="keyword">char</span> [] chs={<span class="string">'a'</span>,<span class="string">'b'</span>,<span class="string">'c'</span>};</span><br><span class="line">String s4= <span class="keyword">new</span> String (chs);</span><br><span class="line"></span><br><span class="line"><span class="comment">//传递一个字节数组</span></span><br><span class="line"><span class="keyword">byte</span>[] bytes = {<span class="number">97</span>,<span class="number">98</span>,<span class="number">99</span>,<span class="number">100</span>}</span><br><span class="line">String s5=<span class="keyword">new</span> String (bytes)</span><br><span class="line"><span class="comment">//s5输出是abcd</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">String str2=<span class="string">"abcd"</span>;</span><br><span class="line"><span class="keyword">int</span> len = str2.substring(<span class="number">1</span>,<span class="number">3</span>).replace(<span class="string">"a"</span>,<span class="string">"b"</span>).length();   <span class="comment">//链式编程</span></span><br><span class="line">System.out.println(len);</span><br></pre></td></tr></tbody></table></figure>
+
+<figure class="highlight java"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">String str1 = <span class="string">"hello world"</span>;</span><br><span class="line">String str2 = <span class="keyword">new</span> String(<span class="string">"hello world"</span>);</span><br><span class="line"></span><br><span class="line"><span class="comment">//将字符串转换为字符数组</span></span><br><span class="line"><span class="keyword">char</span> chararr[]=str1.toCharArray();</span><br><span class="line"></span><br><span class="line"></span><br></pre></td></tr></tbody></table></figure>
+
+<h3 id="4-2-常用方法"><a href="#4-2-常用方法" class="headerlink" title="4.2. 常用方法"></a>4.2. 常用方法</h3><p>String 没有反转函数</p>
+<figure class="highlight java"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">int</span> len = str.length();   <span class="comment">//int length()方法：返回字符串对象包含的字符数。</span></span><br><span class="line">str1.concat(str2); <span class="comment">//String concat(String str)：连接两个字符串</span></span><br><span class="line"><span class="keyword">char</span> c = str.charAt(<span class="number">3</span>);  <span class="comment">//char charAt(int index)方法：返回指定索引出的字符</span></span><br><span class="line"></span><br><span class="line">str.substring(<span class="number">1</span>,<span class="number">3</span>)   <span class="comment">//String substring(int start ,int end)截取字符串  左闭右开</span></span><br><span class="line"><span class="comment">// 时间是O(n)，但是使用substr申请了额外空间，所以空间复杂度是O(n)</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// 替换</span></span><br><span class="line">str.replace(oldChar, newChar)    </span><br><span class="line"></span><br><span class="line">str.indexOf(str)   <span class="comment">//int indexOf(String str)方法，用于为首次出现传递的子字符串作为参数返回String内的索引。如果子字符串str不存在，则返回-1</span></span><br><span class="line"></span><br><span class="line"><span class="comment">//String toUpperCase()：将字符串中的所有字符从小写改写为大写</span></span><br><span class="line"><span class="comment">//String toLowerCase()：将字符串中的所有字符从大写改写为小写</span></span><br><span class="line">String str2 = str1.toUpperCase(); </span><br><span class="line">String str3 = str2.toLowerCase();</span><br><span class="line"></span><br><span class="line"><span class="comment">//字符串反转</span></span><br><span class="line">StringBuilder sb= <span class="keyword">new</span> StringBuilder(<span class="string">"abc"</span>);</span><br><span class="line">sb.reverse().toString();</span><br><span class="line"></span><br></pre></td></tr></tbody></table></figure>
+
+<h4 id="4-2-1-字符串排序"><a href="#4-2-1-字符串排序" class="headerlink" title="4.2.1. 字符串排序"></a>4.2.1. 字符串排序</h4><p>在 Java 中，字符串是不可变的，这意味着如果一个字符串对象已经被创建过一次，那么在内存中就不能改变字符串。</p>
+<figure class="highlight java"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 字母是ASCII码进行存储</span></span><br><span class="line">String str = <span class="string">"abcde"</span></span><br><span class="line"><span class="keyword">char</span>[] str1 = str.toCharArray();  #将字符串转换为字符数组</span><br><span class="line">Arrays.sort(str1);   #对字符数组进行排序</span><br></pre></td></tr></tbody></table></figure>
+
+<h4 id="4-2-2-删除字符串"><a href="#4-2-2-删除字符串" class="headerlink" title="4.2.2. 删除字符串"></a>4.2.2. 删除字符串</h4><figure class="highlight java"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 1.替换函数，替换成空白</span></span><br><span class="line">String test  = <span class="string">"chaojimali"</span>;</span><br><span class="line">String test = test.replace(<span class="string">"chaoji"</span>,<span class="string">""</span>);</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment">// 2.截取函数，删除字符</span></span><br><span class="line">String test = （<span class="string">"chaojimali"</span>）;</span><br><span class="line">test = test.substring(<span class="number">5</span>,<span class="number">12</span>);</span><br><span class="line"></span><br></pre></td></tr></tbody></table></figure>
+
+<h4 id="4-2-3-分割字符串"><a href="#4-2-3-分割字符串" class="headerlink" title="4.2.3. 分割字符串"></a>4.2.3. 分割字符串</h4><p>String[] split(String regex, int limit)：根据正则表达式来匹配出分隔符,拆分字符串，将分割后的结果存入字符数组中。<br>参数：<br>regex为正则表达式分隔符, . 、 $、 | 和 * 等转义字符，必须得加 \；多个分隔符，可以用 | 作为连字符。<br>limit为分割份数</p>
+<figure class="highlight java"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">String str = <span class="string">"Hello World A.B.C"</span></span><br><span class="line">String[] res = str.split(<span class="string">" "</span>);<span class="comment">//res = {"Hello","World","A.B.C"}</span></span><br><span class="line">String[] res = str.split(<span class="string">" "</span>,<span class="number">2</span>);<span class="comment">//res = {"Hello","World A.B.C"}</span></span><br><span class="line">String[] res = str.split(<span class="string">"\\."</span>);<span class="comment">//res = {"Hello World A","B","C"}</span></span><br><span class="line"></span><br><span class="line">String str = <span class="string">"A=1 and B=2 or C=3"</span></span><br><span class="line">String[] res = str.split(<span class="string">"and|or"</span>);<span class="comment">//res = {"A=1 "," B=2 "," C=3"}</span></span><br><span class="line"></span><br><span class="line">String[] res=str.split(<span class="string">"\s+"</span>) <span class="comment">//以空格、换行符、回车为分隔线，相邻的多个空格、换行符、回车仍然视为只有一个,分隔后返回字符数组。</span></span><br><span class="line">[<span class="string">""</span>, <span class="string">"this"</span>, <span class="string">"is"</span>, <span class="string">"a"</span>, <span class="string">"sentence"</span>]</span><br><span class="line">String[] res=str.trim().split(<span class="string">"\s+"</span>)    <span class="comment">//使用str.trim() 去除头尾空格  ["this", "is", "a", "sentence"]</span></span><br></pre></td></tr></tbody></table></figure>
+
+<h4 id="4-2-4-比较字符串"><a href="#4-2-4-比较字符串" class="headerlink" title="4.2.4. 比较字符串"></a>4.2.4. 比较字符串</h4><figure class="highlight java"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">boolean</span> b =str1.equals(str2);  <span class="comment">//完全相同</span></span><br><span class="line"><span class="keyword">boolean</span> b2=str1.equalsIgnoreCase(str2); <span class="comment">//忽略大小写</span></span><br><span class="line">System.out.println(b);</span><br></pre></td></tr></tbody></table></figure>
+
+<h4 id="4-2-5-把字符串转换为相应的数值"><a href="#4-2-5-把字符串转换为相应的数值" class="headerlink" title="4.2.5. 把字符串转换为相应的数值"></a>4.2.5. 把字符串转换为相应的数值</h4><figure class="highlight java"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//1.String转int型：</span></span><br><span class="line"><span class="keyword">int</span> i = Integer.parseInt(String str)   <span class="comment">//第一种</span></span><br><span class="line"><span class="keyword">int</span> i = Integer.valueOf(s).intValue(); <span class="comment">//第二种</span></span><br><span class="line"></span><br><span class="line"><span class="comment">//2.String转long型：</span></span><br><span class="line"><span class="keyword">long</span> l = Long.parseLong(String str);</span><br><span class="line"></span><br><span class="line"><span class="comment">//3.String转double型：</span></span><br><span class="line"><span class="keyword">double</span> d = Double.valueOf(String str).doubleValue();<span class="comment">//doubleValue()不要也可</span></span><br><span class="line"><span class="keyword">double</span> d = Double.parseDouble(str);</span><br><span class="line"></span><br><span class="line"><span class="comment">//4.int转string型：</span></span><br><span class="line">String s = String.valueOf(i)； <span class="comment">//第一种</span></span><br><span class="line">String s = Integer.toString(i); <span class="comment">//第二种</span></span><br><span class="line">String s = <span class="string">""</span> + i;  <span class="comment">//第三种</span></span><br></pre></td></tr></tbody></table></figure>
+
+<h4 id="4-2-6-统计字符"><a href="#4-2-6-统计字符" class="headerlink" title="4.2.6. 统计字符"></a>4.2.6. 统计字符</h4><p>统计—-计数器思想</p>
+<figure class="highlight java"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">int</span> big =<span class="number">0</span>,small=<span class="number">0</span>,number=<span class="number">0</span>; </span><br><span class="line">big++</span><br></pre></td></tr></tbody></table></figure>
+
+<h4 id="4-2-7-格式化字符串"><a href="#4-2-7-格式化字符串" class="headerlink" title="4.2.7. 格式化字符串"></a>4.2.7. 格式化字符串</h4><p>我们知道输出格式化数字可以使用 printf() 和 format() 方法。</p>
+<p>如下所示：</p>
+<figure class="highlight java"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">System.out.printf(<span class="string">"浮点型变量的值为 "</span> +</span><br><span class="line">                  <span class="string">"%f, 整型变量的值为 "</span> +</span><br><span class="line">                  <span class="string">" %d, 字符串变量的值为 "</span> +</span><br><span class="line">                  <span class="string">"is %s"</span>, floatVar, intVar, stringVar);</span><br><span class="line"></span><br></pre></td></tr></tbody></table></figure>
+
+<h4 id="4-2-8-字符串存入字符数组"><a href="#4-2-8-字符串存入字符数组" class="headerlink" title="4.2.8. 字符串存入字符数组"></a>4.2.8. 字符串存入字符数组</h4><figure class="highlight java"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">for</span>(Character c : s.toCharArray()){</span><br><span class="line"></span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
+
+<h3 id="4-3-为什么String需要不可变"><a href="#4-3-为什么String需要不可变" class="headerlink" title="4.3. 为什么String需要不可变"></a>4.3. 为什么String需要不可变</h3><h4 id="4-3-1-字符串常量池的实现"><a href="#4-3-1-字符串常量池的实现" class="headerlink" title="4.3.1. 字符串常量池的实现"></a>4.3.1. 字符串常量池的实现</h4><p>Java中，我们通常有两种方式创建字符串对象，一种是通过字符串字面量方式创建，就如上文的代码，另外一种就是通过 new 方式去创建，如 String c = new String(“string 3”);</p>
+<p>而两者区别就在于通过字符串字面量的方式创建时，JVM 会现在字符串池中检查字符串内容是否已经存在，如果存在就会直接返回对应的引用，而不是再次分配内存进行创建，如果不存在就会分配在内存中创建的同时将字符串数据缓存在字符串池中，便于重用。正是是由于字符串的不可变，同样的字符串内容可以让 JVM 可以减少额外的内存分配操作，直接使用在字符串池中字符串对象即可，对性能提升和内存节省都大有好处。</p>
+<p>关于字符串池，这里稍微简单介绍一下：Java 的字符串池属于 JVM 专门给指定的特殊内存区域，用来存储字符串字面量。在 Java 7 之前，分配于 JVM 的方法区内，属于常量池的一部分；而 Java7 之后字符串池被移至堆内存进行管理，这样的好处就是允许被 JVM 进行垃圾回收操作，将未被引用的字符串所占内存即使回收，以此节省内存。</p>
+<h4 id="4-3-2-Hashcode-缓存"><a href="#4-3-2-Hashcode-缓存" class="headerlink" title="4.3.2. Hashcode 缓存"></a>4.3.2. Hashcode 缓存</h4><p>字符串作为基础的数据结构，大量地应用在一些集合容器之中，尤其是一些散列集合，在散列集合中，存放元素都要根据对象的 hashCode() 方法来确定元素的位置。由于字符串 hashcode 属性不会变更，保证了唯一性，使得类似 HashMap，HashSet 等容器才能实现相应的缓存功能。由于 String 的不可变，避免重复计算 hashcode，只有使用缓存的 hashcode 即可，这样一来大大提高了在散列集合中使用 String 对象的性能。</p>
+<h4 id="4-3-3-线程安全"><a href="#4-3-3-线程安全" class="headerlink" title="4.3.3. 线程安全"></a>4.3.3. 线程安全</h4><p>在多线程中，只有不变的对象和值是线程安全的，可以在多个线程中共享数据。由于 String 天然的不可变，当一个线程”修改“了字符串的值，只会产生一个新的字符串对象，不会对其他线程的访问产生副作用，访问的都是同样的字符串数据，不需要任何同步操作。</p>
+<h4 id="4-3-4-安全性"><a href="#4-3-4-安全性" class="headerlink" title="4.3.4. 安全性"></a>4.3.4. 安全性</h4><p>由于字符串无论在任何 Java 系统中都广泛使用，会用来存储敏感信息，如账号，密码，网络路径，文件处理等场景里，保证字符串 String 类的安全性就尤为重要了，如果字符串是可变的，容易被篡改，那我们就无法保证使用字符串进行操作时，它是安全的，很有可能出现 SQL 注入，访问危险文件等操作。</p>
+<h3 id="4-4-StringBuilder"><a href="#4-4-StringBuilder" class="headerlink" title="4.4. StringBuilder"></a>4.4. StringBuilder</h3><p>StringBuilder可以看作一个容器，创建之后里面的内容是可变的<br>作用：拼接字符串，反转字符串</p>
+<figure class="highlight java"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 构造方法</span></span><br><span class="line">StringBuilder sb= <span class="keyword">new</span> StringBuilder(<span class="string">"abc"</span>);</span><br><span class="line">System.out.println(<span class="string">"sb"</span>);</span><br><span class="line">sb.append();  <span class="comment">//添加数据</span></span><br><span class="line">sb.reverse(); <span class="comment">//反转容器的内容</span></span><br><span class="line">sb.length();  <span class="comment">//返回长度(字符出现的个数)</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// 索引是5的位置替换成空格</span></span><br><span class="line">sb.setCharAt(<span class="number">5</span>, <span class="string">' '</span>);</span><br><span class="line"></span><br><span class="line">sb.replace()    <span class="comment">//void replace(int start, int end, String str) 根据索引把某部分替换成其它的。</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// 删除索引6(包含)至索引14(不包含)的字符串</span></span><br><span class="line">sb.delete(<span class="number">6</span>, <span class="number">14</span>);   <span class="comment">//void delete(int start, int end)</span></span><br><span class="line"><span class="function"><span class="keyword">public</span> StringBuffer <span class="title">deleteCharAt</span><span class="params">(<span class="keyword">int</span> index)</span>: 删除指定位置的字符，并返回本身</span></span><br><span class="line"><span class="function"><span class="keyword">public</span> StringBuffer <span class="title">delete</span><span class="params">(<span class="keyword">int</span> start,<span class="keyword">int</span> end)</span>:删除从指定位置开始到指定位置结束的内容，并返回本身、</span></span><br><span class="line"><span class="function"></span></span><br><span class="line"><span class="function"><span class="comment">// 指定位置0前插入0</span></span></span><br><span class="line"><span class="function">sb.<span class="title">insert</span><span class="params">(<span class="number">0</span>, <span class="number">0</span>)</span></span>;</span><br><span class="line"> </span><br><span class="line"></span><br><span class="line">sb.toString();  <span class="comment">//把StringBuilder对象转为String对象</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br></pre></td></tr></tbody></table></figure>
+
+<figure class="highlight java"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 获取内容</span></span><br><span class="line"><span class="function"><span class="keyword">char</span> <span class="title">charAt</span><span class="params">(<span class="keyword">int</span> index)</span>，根据索引，得到相应字符。</span></span><br><span class="line"><span class="function">String <span class="title">substring</span><span class="params">(<span class="keyword">int</span> start)</span>，根据索引，以字符串形式截取尾部段。</span></span><br><span class="line"><span class="function">String <span class="title">substring</span><span class="params">(<span class="keyword">int</span> start, <span class="keyword">int</span> end)</span>，根据索引，以字符串形式截取内部段。</span></span><br><span class="line"><span class="function">String <span class="title">toString</span><span class="params">()</span>，<span class="comment">//把StringBuilder对象转为String对象</span></span></span><br><span class="line"><span class="function"></span></span><br><span class="line"><span class="function"></span></span><br><span class="line"><span class="function"><span class="comment">// 返回匹配对应的索引</span></span></span><br><span class="line"><span class="function"><span class="comment">//只能判断字符串，不能判断某个字符是否在字符串内</span></span></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">indexOf</span><span class="params">(String str)</span>，输出第一个匹配的索引。</span></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">indexOf</span><span class="params">(String str, <span class="keyword">int</span> fromIndex)</span>，从指定的索引处开始，输出第一个匹配的索引。</span></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">lastIndexOf</span><span class="params">(String str)</span>，输出最后一个匹配的索引。</span></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">lastIndexOf</span><span class="params">(String str, <span class="keyword">int</span> fromIndex)</span>，从指定的索引处开始，输出最后一个匹配的索引。</span></span><br><span class="line"><span class="function"></span></span><br><span class="line"><span class="function">sb.<span class="title">indexOf</span><span class="params">(str)</span>   <span class="comment">//int indexOf(String str)方法，用于为首次出现传递的子字符串作为参数返回String内的索引。如果子字符串str不存在，则返回-1</span></span></span><br><span class="line"><span class="function"></span></span><br></pre></td></tr></tbody></table></figure>
+
+<h3 id="4-5-StringBuffer"><a href="#4-5-StringBuffer" class="headerlink" title="4.5. StringBuffer"></a>4.5. StringBuffer</h3><p> StringBuffer 和 StringBuilder，中文翻译为“字符串缓冲区”。</p>
+<p>StringBuilder 类是 JDK 1.5 新增的类，它也代表可变字符串对象。实际上，StringBuilder 和 StringBuffer 功能基本相似，方法也差不多。不同的是，StringBuffer 是线程安全的，而 StringBuilder 则没有实现线程安全功能，所以性能略高。因此在通常情况下，如果需要创建一个内容可变的字符串对象，则应该优先考虑使用 StringBuilder 类。</p>
+<figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">public StringBuffer deleteCharAt(int index):删除指定位置的字符，并返回本身</span><br><span class="line">public StringBuffer delete(int start,int end):删除从指定位置开始到指定位置结束的内容，并返回本身、</span><br></pre></td></tr></tbody></table></figure>
+
+<h3 id="4-6-StringJoiner"><a href="#4-6-StringJoiner" class="headerlink" title="4.6. StringJoiner"></a>4.6. StringJoiner</h3><p>是一个可变容器，方便拼接字符串</p>
+<figure class="highlight java"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line">StringJoiner sj = <span class="keyword">new</span> StringJoiner(间隔符号)  <span class="comment">//指定拼接时的符号</span></span><br><span class="line">StringJoiner sj = <span class="keyword">new</span> StringJoiner(间隔符号，开始符号，结束符号)</span><br><span class="line"></span><br><span class="line">sj.add(<span class="string">""</span>)  <span class="comment">//添加元素</span></span><br><span class="line">sj.length()</span><br><span class="line">sj.toString()   <span class="comment">//转换为字符串```</span></span><br><span class="line">### 键盘录入扫描类</span><br><span class="line"></span><br><span class="line">```Java</span><br><span class="line"><span class="comment">// 导包</span></span><br><span class="line"><span class="keyword">import</span> Java.util.Scanner;</span><br><span class="line"><span class="comment">// 创建对象</span></span><br><span class="line">Scanner sc= <span class="keyword">new</span> Scanner(System.in);</span><br><span class="line"></span><br><span class="line"><span class="comment">// 接受数据</span></span><br><span class="line"><span class="keyword">int</span> i = sc.nextInt();</span><br><span class="line"></span><br><span class="line"><span class="comment">// next和nextInt以空格或回车换行作为结束</span></span><br><span class="line"><span class="comment">// nextLine以回车换行作为结束</span></span><br></pre></td></tr></tbody></table></figure>
+
+<h2 id="5-Java数组"><a href="#5-Java数组" class="headerlink" title="5. Java数组"></a>5. Java数组</h2><p>数组是一种容器，它用一组连续的内存空间来存储固定大小的相同数据类型(考虑隐形转换)元素，是一种线性表数据结构</p>
+<h3 id="5-1-数组存储的弊端"><a href="#5-1-数组存储的弊端" class="headerlink" title="5.1. 数组存储的弊端"></a>5.1. 数组存储的弊端</h3><p> 数组中提供的方法非常限，没有对于添加、删除、插入数据等操作，非常不便，同时效率不高。</p>
+<p>数组存储数据的特点：有序、可重复。(长度，顺序)不可变</p>
+<h3 id="5-2-定义数组"><a href="#5-2-定义数组" class="headerlink" title="5.2. 定义数组"></a>5.2. 定义数组</h3><ul>
+<li>1.<strong>静态初始化</strong>：手动指定数组元素，而数组的长度由系统（JVM）来决定；如果明确了要操作的具体数据，直接静态初始化即可</li>
+</ul>
+<figure class="highlight java"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 语法格式：</span></span><br><span class="line">数组类型[] 数组名= <span class="keyword">new</span> 数组类型[]{元素<span class="number">1</span>,元素<span class="number">2</span>,…,元素n,};</span><br><span class="line"></span><br><span class="line">数组类型[] 数组名 = {元素<span class="number">1</span>,元素<span class="number">2</span>,…,元素n,};  <span class="comment">//简化定义</span></span><br><span class="line"></span><br><span class="line">String[] arr = {<span class="string">"ni"</span>,<span class="string">"hao "</span>,<span class="string">"ya"</span>}</span><br></pre></td></tr></tbody></table></figure>
+
+<ul>
+<li>2.<strong>动态初始化</strong>：手动指定数组长度，每个数组元素的初始值由系统来决定。【与静态初始化特点相反】；只明确元素具体个数</li>
+</ul>
+<figure class="highlight java"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">数组类型[] 数组名= <span class="keyword">new</span> 数组类型[ length ];</span><br><span class="line"></span><br><span class="line">String[]  arr = <span class="keyword">new</span> String[<span class="number">5</span>]</span><br></pre></td></tr></tbody></table></figure>
+
+<p>动态初始化数组默认初始化值规律<br>整数类型默认为0<br>浮点数型：0.0<br>字符型：’/u0000’ 即空格<br>布尔类型：false<br>引用数据类型：null</p>
+<figure class="highlight java"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//将字符串转换为字符数组</span></span><br><span class="line"><span class="keyword">char</span>[] str1 = str.toCharArray();</span><br></pre></td></tr></tbody></table></figure>
+
+<h3 id="5-3-数组方法"><a href="#5-3-数组方法" class="headerlink" title="5.3. 数组方法"></a>5.3. 数组方法</h3><p>数组的元素类型和数组的大小都是确定的，所以当处理数组元素时候，我们通常使用基本循环或者 foreach 循环。</p>
+<figure class="highlight java"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"></span><br><span class="line">String[] arr = {<span class="string">"ni"</span>,<span class="string">"hao "</span>,<span class="string">"ya"</span>}</span><br><span class="line"></span><br><span class="line">arr.length;       <span class="comment">//数组长度，这是一个属性，字符串长度是方法</span></span><br><span class="line">arr[<span class="number">0</span>]   <span class="comment">//数组的元素是通过索引访问的</span></span><br><span class="line">arr[<span class="number">0</span>] = <span class="string">"le"</span>;  <span class="comment">//修改数据.</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment">//  foreach 循环:在不使用下标的情况下遍历数组</span></span><br><span class="line"><span class="keyword">for</span>(String element:arr){</span><br><span class="line">    System.out.println(element);</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
+
+<h3 id="5-4-Arrays-类"><a href="#5-4-Arrays-类" class="headerlink" title="5.4. Arrays 类"></a>5.4. Arrays 类</h3><p>java.util.Arrays 类能方便地操作数组，它提供的所有方法都是静态的。</p>
+<figure class="highlight java"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">int</span>[] arr = {<span class="number">1</span>,<span class="number">4</span>,<span class="number">5</span>,<span class="number">8</span>,<span class="number">9</span>}</span><br><span class="line">Arrays.toString(arr)  <span class="comment">//将当前数组转换为字符串输出</span></span><br><span class="line">	</span><br><span class="line"><span class="comment">//对数组进行排序,默认升序，使用双轴快排的算法</span></span><br><span class="line"><span class="comment">//传入数组的地址，创建副本修改</span></span><br><span class="line">Arrays.sort(arr)  </span><br><span class="line">	</span><br><span class="line">	</span><br><span class="line"></span><br><span class="line"><span class="keyword">boolean</span> t = Arrays.equals(str1, str2)     <span class="comment">//比较数组中元素值是否相等。</span></span><br><span class="line"></span><br><span class="line"><span class="comment">//在进行数组查询之前，必须对数组进行排序（可以使用 sort() 方法）</span></span><br><span class="line"><span class="comment">// binarySearch(Object[] a,Object key); 传入一个数组对象，在整个数组查找元素，没有则返回值为负的插入点值，所谓插入点值就是第一个比关键字大的元素在数组中的位置索引，而且这个位置索引从1开始。</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// binarySearch(Object[] a,int fromIndex,int toIndex,Object key); 在指定的范围内查找某一元素</span></span><br><span class="line">Arrays.binarySearch(arr,);</span><br></pre></td></tr></tbody></table></figure>
+<h3 id="5-5-防止越界问题"><a href="#5-5-防止越界问题" class="headerlink" title="5.5. 防止越界问题"></a>5.5. 防止越界问题</h3><figure class="highlight java"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//在循环体中避免使用arr[i+1]</span></span><br><span class="line"><span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; arr.length; i++) {</span><br><span class="line">    <span class="keyword">if</span> (arr[i] &gt;max) {</span><br><span class="line">        max = arr[i];</span><br><span class="line">        ch = (<span class="keyword">char</span>) (i + <span class="string">'a'</span>);</span><br><span class="line">    }</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
+
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">文章作者: </span><span class="post-copyright-info"><a href="https://wenkex.gitee.io">Arts</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">文章链接: </span><span class="post-copyright-info"><a href="https://wenkex.gitee.io/2022/101950914.html">https://wenkex.gitee.io/2022/101950914.html</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来自 <a href="https://wenkex.gitee.io" target="_blank">wenke</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"></div><div class="post_share"><div class="social-share" data-image="/img/top.jpg" data-sites="wechat,qq,facebook,twitter,weibo"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/js/social-share.min.js" defer></script></div></div><div class="post-reward"><div class="reward-button"><i class="fas fa-qrcode"></i> 打赏</div><div class="reward-main"><ul class="reward-all"><li class="reward-item"><a href="/img/wechat.jpg" target="_blank"><img class="post-qr-code-img" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAASwAAAEsCAMAAABOo35HAAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAC9UExURVlZWdPT07KysmRkZIWFhfT09JmZmWZmZm9vb39/fxkZGUxMTDMzM3p6epCQkKamppubm729venp6cjIyN7e3tbW1s/Pz8LCwnx8fLS0tFZWVoiIiI+Pj6GhoeTk5Glpabu7u93d3evr66CgoJSUlKqqqsnJyeDg4Hd3d8PDw+Xl5bi4uNHR0dvb26Ojo6urq+fn51hYWDg4OCgoKHBwcK2traenp0FBQe7u7vHx8U5OTre3t8zMzHV1df///7GrnpQAAAA/dFJOU///////////////////////////////////////////////////////////////////////////////////AI4mfBcAAAUGSURBVHja7NoJb6M4GMZxY0NCD64kve/pMZ2d3Z297+X7f6zFNmBAMUXa6URl/q9UJSWPUPzrizFWRUlNLgEBWGCBBRZYYEEAFlhggQUWWBCABRZYYIEFFgRggQUWWGCBBQFYYIEFFlhgQQAWWGCBBRZYEIAFFlhggQUWBGCBBRZYYIEFAVhggQUWWGBBABZYYIEFFlgQgAUWWGCBBRYEYIEFFlhggQUBWGCBBRZYYEEAFlhggQUWWBCABRZYYIEFFgRggQUWWGCBBQFYYIEFFlhgQQAWWGCBBRZYEIAFFlhggQUWBGCBBRZYn6cCIcRXgvX/h9qcIVBqDdbEM8RCxGCB9QqXYRwHYDHBgwXWl8eKZKiESHI3Ba1kWs3fKixcaJUl1YyeBm7Ocq+yLItUiVBGnXxenSHJolIKEcwHq6ikbOX1YGVzQCTN8LPmSLreghUl9sN4Uw7yajMrLC0TZ1ImzqY6FEop0+pIaEN5HaoOxVuwEqFyc4I46uSlzOLqgxlh6UaR9l3VYWl9Fdoxb1Q90KJtu41pwwFW/WHhTtW8i7TafLCqRsk6bsGw63L9qurXRmuIlbT9lDQnlXU+nBFW1Q2qnZbDprWa2tjR90LZFqx1/+Td/HpGWLlrLDvIwTcx6dQ1Vrntbig68cDms3JwbA5Y1azs1ger6sNV/bbIw1jU81MvNAGrl58RVn8ozW+btF08iGFoAlYvP3csfVur1gJBEIA1uBmue5dhZDOyO2epbmgCVi8/I6x0MMHH9pjsTfBhNzQBq5uPZoQlB0uH3DZG4EZqQ26fL3sZq5uf09Ih6qw3i/pm6BZO0qZX7rrUS68Xsbr5ZE4rePMk08pk9aUZugfqppvs6AM1Acvlo/StP+6EbW06z8hJqxbYp2BZPQUnFsLsKuhQdaHqn5ewbF7KXIn0jWO5MqOQ7RaNLPtbNMmmhimj0GUmYLl8Gs0Lq4wyPbTu1l2QKqHSouzs3OlDIslW5SQsnY/NXmFplyNvEuuLV/Tau9BzwiraDUSwXmysztYWWNtL1psXeumgIrDGaqXvBfUuvtqUYI3V2t1wk1e2msFluJJm6zDJXv/fIfjPP7DAAgsssCiwwAILLLDAosACCyywwAKLAgsssMACC6zt9fDz/v75tyOB+98PD2+ORgKffjw4OP1uJPDxl+Xy8v1I4MPF3t7VNyOB4/vF4uzdzrG+39f1kz/w66Guv/yBvw90KX/gZKkr8Qf+2dOV+gNHC12/7RxrabD2/a31bLAO/a11YbAO/K21MFhLf2s9Gqw9f2vdGqzFu11jnVusE2/gxmI9eQOnFuvYG7i0WH7uK4t15w2cWazrXWP9a7H8f/bQYvm/6IPF+sF/pVssf19Ii/WH/0K2WH/uGuvEWC39gSdj9Twy+Rqri5EZx1gt/IE7Y/XoD1wbq9vd3w1PlufnD2OBp+ebm/uxwPHF6emnscDR4vLy41jg7vHq6sNY4Pr27OyYdRaLUrDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssL6u+k+AAQCR9eHtLKvLfwAAAABJRU5ErkJggg==" data-original="/img/wechat.jpg" alt="wechat"/></a><div class="post-qr-code-desc">wechat</div></li><li class="reward-item"><a href="/img/alipay.jpg" target="_blank"><img class="post-qr-code-img" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAASwAAAEsCAMAAABOo35HAAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAC9UExURVlZWdPT07KysmRkZIWFhfT09JmZmWZmZm9vb39/fxkZGUxMTDMzM3p6epCQkKamppubm729venp6cjIyN7e3tbW1s/Pz8LCwnx8fLS0tFZWVoiIiI+Pj6GhoeTk5Glpabu7u93d3evr66CgoJSUlKqqqsnJyeDg4Hd3d8PDw+Xl5bi4uNHR0dvb26Ojo6urq+fn51hYWDg4OCgoKHBwcK2traenp0FBQe7u7vHx8U5OTre3t8zMzHV1df///7GrnpQAAAA/dFJOU///////////////////////////////////////////////////////////////////////////////////AI4mfBcAAAUGSURBVHja7NoJb6M4GMZxY0NCD64kve/pMZ2d3Z297+X7f6zFNmBAMUXa6URl/q9UJSWPUPzrizFWRUlNLgEBWGCBBRZYYEEAFlhggQUWWBCABRZYYIEFFgRggQUWWGCBBQFYYIEFFlhgQQAWWGCBBRZYEIAFFlhggQUWBGCBBRZYYIEFAVhggQUWWGBBABZYYIEFFlgQgAUWWGCBBRYEYIEFFlhggQUBWGCBBRZYYEEAFlhggQUWWBCABRZYYIEFFgRggQUWWGCBBQFYYIEFFlhgQQAWWGCBBRZYEIAFFlhggQUWBGCBBRZYn6cCIcRXgvX/h9qcIVBqDdbEM8RCxGCB9QqXYRwHYDHBgwXWl8eKZKiESHI3Ba1kWs3fKixcaJUl1YyeBm7Ocq+yLItUiVBGnXxenSHJolIKEcwHq6ikbOX1YGVzQCTN8LPmSLreghUl9sN4Uw7yajMrLC0TZ1ImzqY6FEop0+pIaEN5HaoOxVuwEqFyc4I46uSlzOLqgxlh6UaR9l3VYWl9Fdoxb1Q90KJtu41pwwFW/WHhTtW8i7TafLCqRsk6bsGw63L9qurXRmuIlbT9lDQnlXU+nBFW1Q2qnZbDprWa2tjR90LZFqx1/+Td/HpGWLlrLDvIwTcx6dQ1Vrntbig68cDms3JwbA5Y1azs1ger6sNV/bbIw1jU81MvNAGrl58RVn8ozW+btF08iGFoAlYvP3csfVur1gJBEIA1uBmue5dhZDOyO2epbmgCVi8/I6x0MMHH9pjsTfBhNzQBq5uPZoQlB0uH3DZG4EZqQ26fL3sZq5uf09Ih6qw3i/pm6BZO0qZX7rrUS68Xsbr5ZE4rePMk08pk9aUZugfqppvs6AM1Acvlo/StP+6EbW06z8hJqxbYp2BZPQUnFsLsKuhQdaHqn5ewbF7KXIn0jWO5MqOQ7RaNLPtbNMmmhimj0GUmYLl8Gs0Lq4wyPbTu1l2QKqHSouzs3OlDIslW5SQsnY/NXmFplyNvEuuLV/Tau9BzwiraDUSwXmysztYWWNtL1psXeumgIrDGaqXvBfUuvtqUYI3V2t1wk1e2msFluJJm6zDJXv/fIfjPP7DAAgsssCiwwAILLLDAosACCyywwAKLAgsssMACC6zt9fDz/v75tyOB+98PD2+ORgKffjw4OP1uJPDxl+Xy8v1I4MPF3t7VNyOB4/vF4uzdzrG+39f1kz/w66Guv/yBvw90KX/gZKkr8Qf+2dOV+gNHC12/7RxrabD2/a31bLAO/a11YbAO/K21MFhLf2s9Gqw9f2vdGqzFu11jnVusE2/gxmI9eQOnFuvYG7i0WH7uK4t15w2cWazrXWP9a7H8f/bQYvm/6IPF+sF/pVssf19Ii/WH/0K2WH/uGuvEWC39gSdj9Twy+Rqri5EZx1gt/IE7Y/XoD1wbq9vd3w1PlufnD2OBp+ebm/uxwPHF6emnscDR4vLy41jg7vHq6sNY4Pr27OyYdRaLUrDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssL6u+k+AAQCR9eHtLKvLfwAAAABJRU5ErkJggg==" data-original="/img/alipay.jpg" alt="alipay"/></a><div class="post-qr-code-desc">alipay</div></li></ul></div></div><nav class="pagination-post" id="pagination"><div class="prev-post pull-left"><a href="/2022/101931415.html"><img class="prev-cover" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAASwAAAEsCAMAAABOo35HAAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAC9UExURVlZWdPT07KysmRkZIWFhfT09JmZmWZmZm9vb39/fxkZGUxMTDMzM3p6epCQkKamppubm729venp6cjIyN7e3tbW1s/Pz8LCwnx8fLS0tFZWVoiIiI+Pj6GhoeTk5Glpabu7u93d3evr66CgoJSUlKqqqsnJyeDg4Hd3d8PDw+Xl5bi4uNHR0dvb26Ojo6urq+fn51hYWDg4OCgoKHBwcK2traenp0FBQe7u7vHx8U5OTre3t8zMzHV1df///7GrnpQAAAA/dFJOU///////////////////////////////////////////////////////////////////////////////////AI4mfBcAAAUGSURBVHja7NoJb6M4GMZxY0NCD64kve/pMZ2d3Z297+X7f6zFNmBAMUXa6URl/q9UJSWPUPzrizFWRUlNLgEBWGCBBRZYYEEAFlhggQUWWBCABRZYYIEFFgRggQUWWGCBBQFYYIEFFlhgQQAWWGCBBRZYEIAFFlhggQUWBGCBBRZYYIEFAVhggQUWWGBBABZYYIEFFlgQgAUWWGCBBRYEYIEFFlhggQUBWGCBBRZYYEEAFlhggQUWWBCABRZYYIEFFgRggQUWWGCBBQFYYIEFFlhgQQAWWGCBBRZYEIAFFlhggQUWBGCBBRZYn6cCIcRXgvX/h9qcIVBqDdbEM8RCxGCB9QqXYRwHYDHBgwXWl8eKZKiESHI3Ba1kWs3fKixcaJUl1YyeBm7Ocq+yLItUiVBGnXxenSHJolIKEcwHq6ikbOX1YGVzQCTN8LPmSLreghUl9sN4Uw7yajMrLC0TZ1ImzqY6FEop0+pIaEN5HaoOxVuwEqFyc4I46uSlzOLqgxlh6UaR9l3VYWl9Fdoxb1Q90KJtu41pwwFW/WHhTtW8i7TafLCqRsk6bsGw63L9qurXRmuIlbT9lDQnlXU+nBFW1Q2qnZbDprWa2tjR90LZFqx1/+Td/HpGWLlrLDvIwTcx6dQ1Vrntbig68cDms3JwbA5Y1azs1ger6sNV/bbIw1jU81MvNAGrl58RVn8ozW+btF08iGFoAlYvP3csfVur1gJBEIA1uBmue5dhZDOyO2epbmgCVi8/I6x0MMHH9pjsTfBhNzQBq5uPZoQlB0uH3DZG4EZqQ26fL3sZq5uf09Ih6qw3i/pm6BZO0qZX7rrUS68Xsbr5ZE4rePMk08pk9aUZugfqppvs6AM1Acvlo/StP+6EbW06z8hJqxbYp2BZPQUnFsLsKuhQdaHqn5ewbF7KXIn0jWO5MqOQ7RaNLPtbNMmmhimj0GUmYLl8Gs0Lq4wyPbTu1l2QKqHSouzs3OlDIslW5SQsnY/NXmFplyNvEuuLV/Tau9BzwiraDUSwXmysztYWWNtL1psXeumgIrDGaqXvBfUuvtqUYI3V2t1wk1e2msFluJJm6zDJXv/fIfjPP7DAAgsssCiwwAILLLDAosACCyywwAKLAgsssMACC6zt9fDz/v75tyOB+98PD2+ORgKffjw4OP1uJPDxl+Xy8v1I4MPF3t7VNyOB4/vF4uzdzrG+39f1kz/w66Guv/yBvw90KX/gZKkr8Qf+2dOV+gNHC12/7RxrabD2/a31bLAO/a11YbAO/K21MFhLf2s9Gqw9f2vdGqzFu11jnVusE2/gxmI9eQOnFuvYG7i0WH7uK4t15w2cWazrXWP9a7H8f/bQYvm/6IPF+sF/pVssf19Ii/WH/0K2WH/uGuvEWC39gSdj9Twy+Rqri5EZx1gt/IE7Y/XoD1wbq9vd3w1PlufnD2OBp+ebm/uxwPHF6emnscDR4vLy41jg7vHq6sNY4Pr27OyYdRaLUrDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssL6u+k+AAQCR9eHtLKvLfwAAAABJRU5ErkJggg==" data-original="/img/top.jpg" onerror="onerror=null;src='/img/404.jpg'" alt="cover of previous post"><div class="pagination-info"><div class="label">上一篇</div><div class="prev_info">hexo博客搭建</div></div></a></div><div class="next-post pull-right"><a href="/2022/101935525.html"><img class="next-cover" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAASwAAAEsCAMAAABOo35HAAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAC9UExURVlZWdPT07KysmRkZIWFhfT09JmZmWZmZm9vb39/fxkZGUxMTDMzM3p6epCQkKamppubm729venp6cjIyN7e3tbW1s/Pz8LCwnx8fLS0tFZWVoiIiI+Pj6GhoeTk5Glpabu7u93d3evr66CgoJSUlKqqqsnJyeDg4Hd3d8PDw+Xl5bi4uNHR0dvb26Ojo6urq+fn51hYWDg4OCgoKHBwcK2traenp0FBQe7u7vHx8U5OTre3t8zMzHV1df///7GrnpQAAAA/dFJOU///////////////////////////////////////////////////////////////////////////////////AI4mfBcAAAUGSURBVHja7NoJb6M4GMZxY0NCD64kve/pMZ2d3Z297+X7f6zFNmBAMUXa6URl/q9UJSWPUPzrizFWRUlNLgEBWGCBBRZYYEEAFlhggQUWWBCABRZYYIEFFgRggQUWWGCBBQFYYIEFFlhgQQAWWGCBBRZYEIAFFlhggQUWBGCBBRZYYIEFAVhggQUWWGBBABZYYIEFFlgQgAUWWGCBBRYEYIEFFlhggQUBWGCBBRZYYEEAFlhggQUWWBCABRZYYIEFFgRggQUWWGCBBQFYYIEFFlhgQQAWWGCBBRZYEIAFFlhggQUWBGCBBRZYn6cCIcRXgvX/h9qcIVBqDdbEM8RCxGCB9QqXYRwHYDHBgwXWl8eKZKiESHI3Ba1kWs3fKixcaJUl1YyeBm7Ocq+yLItUiVBGnXxenSHJolIKEcwHq6ikbOX1YGVzQCTN8LPmSLreghUl9sN4Uw7yajMrLC0TZ1ImzqY6FEop0+pIaEN5HaoOxVuwEqFyc4I46uSlzOLqgxlh6UaR9l3VYWl9Fdoxb1Q90KJtu41pwwFW/WHhTtW8i7TafLCqRsk6bsGw63L9qurXRmuIlbT9lDQnlXU+nBFW1Q2qnZbDprWa2tjR90LZFqx1/+Td/HpGWLlrLDvIwTcx6dQ1Vrntbig68cDms3JwbA5Y1azs1ger6sNV/bbIw1jU81MvNAGrl58RVn8ozW+btF08iGFoAlYvP3csfVur1gJBEIA1uBmue5dhZDOyO2epbmgCVi8/I6x0MMHH9pjsTfBhNzQBq5uPZoQlB0uH3DZG4EZqQ26fL3sZq5uf09Ih6qw3i/pm6BZO0qZX7rrUS68Xsbr5ZE4rePMk08pk9aUZugfqppvs6AM1Acvlo/StP+6EbW06z8hJqxbYp2BZPQUnFsLsKuhQdaHqn5ewbF7KXIn0jWO5MqOQ7RaNLPtbNMmmhimj0GUmYLl8Gs0Lq4wyPbTu1l2QKqHSouzs3OlDIslW5SQsnY/NXmFplyNvEuuLV/Tau9BzwiraDUSwXmysztYWWNtL1psXeumgIrDGaqXvBfUuvtqUYI3V2t1wk1e2msFluJJm6zDJXv/fIfjPP7DAAgsssCiwwAILLLDAosACCyywwAKLAgsssMACC6zt9fDz/v75tyOB+98PD2+ORgKffjw4OP1uJPDxl+Xy8v1I4MPF3t7VNyOB4/vF4uzdzrG+39f1kz/w66Guv/yBvw90KX/gZKkr8Qf+2dOV+gNHC12/7RxrabD2/a31bLAO/a11YbAO/K21MFhLf2s9Gqw9f2vdGqzFu11jnVusE2/gxmI9eQOnFuvYG7i0WH7uK4t15w2cWazrXWP9a7H8f/bQYvm/6IPF+sF/pVssf19Ii/WH/0K2WH/uGuvEWC39gSdj9Twy+Rqri5EZx1gt/IE7Y/XoD1wbq9vd3w1PlufnD2OBp+ebm/uxwPHF6emnscDR4vLy41jg7vHq6sNY4Pr27OyYdRaLUrDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssL6u+k+AAQCR9eHtLKvLfwAAAABJRU5ErkJggg==" data-original="/img/top.jpg" onerror="onerror=null;src='/img/404.jpg'" alt="cover of next post"><div class="pagination-info"><div class="label">下一篇</div><div class="next_info">Obsidian笔记管理</div></div></a></div></nav><hr/><div id="post-comment"><div class="comment-head"><div class="comment-headline"><i class="fas fa-comments fa-fw"></i><span> 评论</span></div><div id="comment-switch"><span class="first-comment">Valine</span><span class="switch-btn"></span><span class="second-comment">Gitalk</span></div></div><div class="comment-wrap"><div><div class="vcomment" id="vcomment"></div></div><div><div id="gitalk-container"></div></div></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAASwAAAEsCAMAAABOo35HAAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAC9UExURVlZWdPT07KysmRkZIWFhfT09JmZmWZmZm9vb39/fxkZGUxMTDMzM3p6epCQkKamppubm729venp6cjIyN7e3tbW1s/Pz8LCwnx8fLS0tFZWVoiIiI+Pj6GhoeTk5Glpabu7u93d3evr66CgoJSUlKqqqsnJyeDg4Hd3d8PDw+Xl5bi4uNHR0dvb26Ojo6urq+fn51hYWDg4OCgoKHBwcK2traenp0FBQe7u7vHx8U5OTre3t8zMzHV1df///7GrnpQAAAA/dFJOU///////////////////////////////////////////////////////////////////////////////////AI4mfBcAAAUGSURBVHja7NoJb6M4GMZxY0NCD64kve/pMZ2d3Z297+X7f6zFNmBAMUXa6URl/q9UJSWPUPzrizFWRUlNLgEBWGCBBRZYYEEAFlhggQUWWBCABRZYYIEFFgRggQUWWGCBBQFYYIEFFlhgQQAWWGCBBRZYEIAFFlhggQUWBGCBBRZYYIEFAVhggQUWWGBBABZYYIEFFlgQgAUWWGCBBRYEYIEFFlhggQUBWGCBBRZYYEEAFlhggQUWWBCABRZYYIEFFgRggQUWWGCBBQFYYIEFFlhgQQAWWGCBBRZYEIAFFlhggQUWBGCBBRZYn6cCIcRXgvX/h9qcIVBqDdbEM8RCxGCB9QqXYRwHYDHBgwXWl8eKZKiESHI3Ba1kWs3fKixcaJUl1YyeBm7Ocq+yLItUiVBGnXxenSHJolIKEcwHq6ikbOX1YGVzQCTN8LPmSLreghUl9sN4Uw7yajMrLC0TZ1ImzqY6FEop0+pIaEN5HaoOxVuwEqFyc4I46uSlzOLqgxlh6UaR9l3VYWl9Fdoxb1Q90KJtu41pwwFW/WHhTtW8i7TafLCqRsk6bsGw63L9qurXRmuIlbT9lDQnlXU+nBFW1Q2qnZbDprWa2tjR90LZFqx1/+Td/HpGWLlrLDvIwTcx6dQ1Vrntbig68cDms3JwbA5Y1azs1ger6sNV/bbIw1jU81MvNAGrl58RVn8ozW+btF08iGFoAlYvP3csfVur1gJBEIA1uBmue5dhZDOyO2epbmgCVi8/I6x0MMHH9pjsTfBhNzQBq5uPZoQlB0uH3DZG4EZqQ26fL3sZq5uf09Ih6qw3i/pm6BZO0qZX7rrUS68Xsbr5ZE4rePMk08pk9aUZugfqppvs6AM1Acvlo/StP+6EbW06z8hJqxbYp2BZPQUnFsLsKuhQdaHqn5ewbF7KXIn0jWO5MqOQ7RaNLPtbNMmmhimj0GUmYLl8Gs0Lq4wyPbTu1l2QKqHSouzs3OlDIslW5SQsnY/NXmFplyNvEuuLV/Tau9BzwiraDUSwXmysztYWWNtL1psXeumgIrDGaqXvBfUuvtqUYI3V2t1wk1e2msFluJJm6zDJXv/fIfjPP7DAAgsssCiwwAILLLDAosACCyywwAKLAgsssMACC6zt9fDz/v75tyOB+98PD2+ORgKffjw4OP1uJPDxl+Xy8v1I4MPF3t7VNyOB4/vF4uzdzrG+39f1kz/w66Guv/yBvw90KX/gZKkr8Qf+2dOV+gNHC12/7RxrabD2/a31bLAO/a11YbAO/K21MFhLf2s9Gqw9f2vdGqzFu11jnVusE2/gxmI9eQOnFuvYG7i0WH7uK4t15w2cWazrXWP9a7H8f/bQYvm/6IPF+sF/pVssf19Ii/WH/0K2WH/uGuvEWC39gSdj9Twy+Rqri5EZx1gt/IE7Y/XoD1wbq9vd3w1PlufnD2OBp+ebm/uxwPHF6emnscDR4vLy41jg7vHq6sNY4Pr27OyYdRaLUrDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssL6u+k+AAQCR9eHtLKvLfwAAAABJRU5ErkJggg==" data-original="/img/me.jpg" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">wenke</div><div class="author-info__description">专注于编程,分享生活,分享知识</div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">53</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">39</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">12</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/wenkexia"><i class="fab fa-github"></i><span>Follow Me</span></a><div class="card-info-social-icons is-center"><a class="social-icon" href="https://github.com/wenkexia" target="_blank" title="Github"><i class="fab fa-github"></i></a><a class="social-icon" href="/1184664659@qq.com" target="_blank" title="Email"><i class="fas fa-envelope"></i></a><a class="social-icon" href="/atom.xml" target="_blank" title=""><i class="fa fa-rss"></i></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">备用网址:https://wenkex.gitee.io (速度更快)</div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#1-%E5%9F%BA%E6%9C%AC%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B"><span class="toc-number">1.</span> <span class="toc-text">1. 基本数据类型</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-1-%E6%95%B4%E6%95%B0%E5%9E%8B"><span class="toc-number">1.1.</span> <span class="toc-text">1.1. 整数型</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1-2-%E6%B5%AE%E7%82%B9%E5%9E%8B"><span class="toc-number">1.2.</span> <span class="toc-text">1.2. 浮点型</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1-3-%E5%B8%83%E5%B0%94%E5%9E%8B-boolean"><span class="toc-number">1.3.</span> <span class="toc-text">1.3. 布尔型(boolean)</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1-4-%E5%AD%97%E7%AC%A6%E5%9E%8B-char"><span class="toc-number">1.4.</span> <span class="toc-text">1.4. 字符型(char)</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-%E5%86%85%E7%BD%AE%E5%8C%85%E8%A3%85%E7%B1%BB"><span class="toc-number">2.</span> <span class="toc-text">2. 内置包装类</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#2-1-%E8%A3%85%E7%AE%B1%E5%92%8C%E6%8B%86%E7%AE%B1"><span class="toc-number">2.1.</span> <span class="toc-text">2.1. 装箱和拆箱</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-2-Integer"><span class="toc-number">2.2.</span> <span class="toc-text">2.2. Integer</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-3-Character-%E7%B1%BB"><span class="toc-number">2.3.</span> <span class="toc-text">2.3. Character 类</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-%E5%BC%95%E7%94%A8%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B"><span class="toc-number">3.</span> <span class="toc-text">3. 引用数据类型</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#3-1-null"><span class="toc-number">3.1.</span> <span class="toc-text">3.1. null</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#4-String%E5%AD%97%E7%AC%A6%E4%B8%B2%E7%B1%BB"><span class="toc-number">4.</span> <span class="toc-text">4. String字符串类</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#4-1-%E5%88%9B%E5%BB%BA%E5%AD%97%E7%AC%A6%E4%B8%B2"><span class="toc-number">4.1.</span> <span class="toc-text">4.1. 创建字符串</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-2-%E5%B8%B8%E7%94%A8%E6%96%B9%E6%B3%95"><span class="toc-number">4.2.</span> <span class="toc-text">4.2. 常用方法</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#4-2-1-%E5%AD%97%E7%AC%A6%E4%B8%B2%E6%8E%92%E5%BA%8F"><span class="toc-number">4.2.1.</span> <span class="toc-text">4.2.1. 字符串排序</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#4-2-2-%E5%88%A0%E9%99%A4%E5%AD%97%E7%AC%A6%E4%B8%B2"><span class="toc-number">4.2.2.</span> <span class="toc-text">4.2.2. 删除字符串</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#4-2-3-%E5%88%86%E5%89%B2%E5%AD%97%E7%AC%A6%E4%B8%B2"><span class="toc-number">4.2.3.</span> <span class="toc-text">4.2.3. 分割字符串</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#4-2-4-%E6%AF%94%E8%BE%83%E5%AD%97%E7%AC%A6%E4%B8%B2"><span class="toc-number">4.2.4.</span> <span class="toc-text">4.2.4. 比较字符串</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#4-2-5-%E6%8A%8A%E5%AD%97%E7%AC%A6%E4%B8%B2%E8%BD%AC%E6%8D%A2%E4%B8%BA%E7%9B%B8%E5%BA%94%E7%9A%84%E6%95%B0%E5%80%BC"><span class="toc-number">4.2.5.</span> <span class="toc-text">4.2.5. 把字符串转换为相应的数值</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#4-2-6-%E7%BB%9F%E8%AE%A1%E5%AD%97%E7%AC%A6"><span class="toc-number">4.2.6.</span> <span class="toc-text">4.2.6. 统计字符</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#4-2-7-%E6%A0%BC%E5%BC%8F%E5%8C%96%E5%AD%97%E7%AC%A6%E4%B8%B2"><span class="toc-number">4.2.7.</span> <span class="toc-text">4.2.7. 格式化字符串</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#4-2-8-%E5%AD%97%E7%AC%A6%E4%B8%B2%E5%AD%98%E5%85%A5%E5%AD%97%E7%AC%A6%E6%95%B0%E7%BB%84"><span class="toc-number">4.2.8.</span> <span class="toc-text">4.2.8. 字符串存入字符数组</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-3-%E4%B8%BA%E4%BB%80%E4%B9%88String%E9%9C%80%E8%A6%81%E4%B8%8D%E5%8F%AF%E5%8F%98"><span class="toc-number">4.3.</span> <span class="toc-text">4.3. 为什么String需要不可变</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#4-3-1-%E5%AD%97%E7%AC%A6%E4%B8%B2%E5%B8%B8%E9%87%8F%E6%B1%A0%E7%9A%84%E5%AE%9E%E7%8E%B0"><span class="toc-number">4.3.1.</span> <span class="toc-text">4.3.1. 字符串常量池的实现</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#4-3-2-Hashcode-%E7%BC%93%E5%AD%98"><span class="toc-number">4.3.2.</span> <span class="toc-text">4.3.2. Hashcode 缓存</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#4-3-3-%E7%BA%BF%E7%A8%8B%E5%AE%89%E5%85%A8"><span class="toc-number">4.3.3.</span> <span class="toc-text">4.3.3. 线程安全</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#4-3-4-%E5%AE%89%E5%85%A8%E6%80%A7"><span class="toc-number">4.3.4.</span> <span class="toc-text">4.3.4. 安全性</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-4-StringBuilder"><span class="toc-number">4.4.</span> <span class="toc-text">4.4. StringBuilder</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-5-StringBuffer"><span class="toc-number">4.5.</span> <span class="toc-text">4.5. StringBuffer</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-6-StringJoiner"><span class="toc-number">4.6.</span> <span class="toc-text">4.6. StringJoiner</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#5-Java%E6%95%B0%E7%BB%84"><span class="toc-number">5.</span> <span class="toc-text">5. Java数组</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#5-1-%E6%95%B0%E7%BB%84%E5%AD%98%E5%82%A8%E7%9A%84%E5%BC%8A%E7%AB%AF"><span class="toc-number">5.1.</span> <span class="toc-text">5.1. 数组存储的弊端</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#5-2-%E5%AE%9A%E4%B9%89%E6%95%B0%E7%BB%84"><span class="toc-number">5.2.</span> <span class="toc-text">5.2. 定义数组</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#5-3-%E6%95%B0%E7%BB%84%E6%96%B9%E6%B3%95"><span class="toc-number">5.3.</span> <span class="toc-text">5.3. 数组方法</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#5-4-Arrays-%E7%B1%BB"><span class="toc-number">5.4.</span> <span class="toc-text">5.4. Arrays 类</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#5-5-%E9%98%B2%E6%AD%A2%E8%B6%8A%E7%95%8C%E9%97%AE%E9%A2%98"><span class="toc-number">5.5.</span> <span class="toc-text">5.5. 防止越界问题</span></a></li></ol></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2022/101963206.html" title="蓝桥杯准备">蓝桥杯准备</a><time datetime="2022-10-19T10:20:35.000Z" title="发表于 2022-10-19 18:20:35">2022-10-19</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2022/10190.html" title="无题">无题</a><time datetime="2022-10-19T09:08:06.139Z" title="发表于 2022-10-19 17:08:06">2022-10-19</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2022/101954372.html" title="Git使用">Git使用</a><time datetime="2022-10-19T09:06:04.000Z" title="发表于 2022-10-19 17:06:04">2022-10-19</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2022/101960077.html" title="Github使用">Github使用</a><time datetime="2022-10-19T09:05:27.000Z" title="发表于 2022-10-19 17:05:27">2022-10-19</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2022/101913972.html" title="Joplin全平台同步笔记">Joplin全平台同步笔记</a><time datetime="2022-10-19T07:56:14.000Z" title="发表于 2022-10-19 15:56:14">2022-10-19</time></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2022 By wenke</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div><div class="footer_custom_text">Hi, welcome to my <a target="_blank" rel="noopener" href="https://butterfly.js.org/">blog</a>!</div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="translateLink" type="button" title="简繁转换">简</button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><a id="to_comment" href="#post-comment" title="直达评论"><i class="fas fa-comments"></i></a><button id="go-up" type="button" title="回到顶部"><i class="fas fa-arrow-up"></i></button></div></div><div id="local-search"><div class="search-dialog"><nav class="search-nav"><span class="search-dialog-title">搜索</span><span id="loading-status"></span><button class="search-close-button"><i class="fas fa-times"></i></button></nav><div class="is-center" id="loading-database"><i class="fas fa-spinner fa-pulse"></i><span>  数据库加载中</span></div><div class="search-wrap"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="搜索文章" type="text"/></div></div><hr/><div id="local-search-results"></div></div></div><div id="search-mask"></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="/js/tw_cn.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.min.js"></script><script src="https://cdn.jsdelivr.net/npm/instant.page/instantpage.min.js" type="module"></script><script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload/dist/lazyload.iife.min.js"></script><script src="https://cdn.jsdelivr.net/npm/node-snackbar/dist/snackbar.min.js"></script><script>function panguFn () {
+  if (typeof pangu === 'object') pangu.autoSpacingPage()
+  else {
+    getScript('https://cdn.jsdelivr.net/npm/pangu/dist/browser/pangu.min.js')
+      .then(() => {
+        pangu.autoSpacingPage()
+      })
+  }
+}
+
+function panguInit () {
+  if (false){
+    GLOBAL_CONFIG_SITE.isPost && panguFn()
+  } else {
+    panguFn()
+  }
+}
+
+document.addEventListener('DOMContentLoaded', panguInit)</script><script src="/js/search/local-search.js"></script><script>var preloader = {
+  endLoading: () => {
+    document.body.style.overflow = 'auto';
+    document.getElementById('loading-box').classList.add("loaded")
+  },
+  initLoading: () => {
+    document.body.style.overflow = '';
+    document.getElementById('loading-box').classList.remove("loaded")
+
+  }
+}
+window.addEventListener('load',preloader.endLoading())</script><div class="js-pjax"><script>(() => {
+  const $mermaidWrap = document.querySelectorAll('#article-container .mermaid-wrap')
+  if ($mermaidWrap.length) {
+    window.runMermaid = () => {
+      window.loadMermaid = true
+      const theme = document.documentElement.getAttribute('data-theme') === 'dark' ? 'dark' : 'default'
+
+      Array.from($mermaidWrap).forEach((item, index) => {
+        const mermaidSrc = item.firstElementChild
+        const mermaidThemeConfig = '%%{init:{ \'theme\':\'' + theme + '\'}}%%\n'
+        const mermaidID = 'mermaid-' + index
+        const mermaidDefinition = mermaidThemeConfig + mermaidSrc.textContent
+        mermaid.mermaidAPI.render(mermaidID, mermaidDefinition, (svgCode) => {
+          mermaidSrc.insertAdjacentHTML('afterend', svgCode)
+        })
+      })
+    }
+
+    const loadMermaid = () => {
+      window.loadMermaid ? runMermaid() : getScript('https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js').then(runMermaid)
+    }
+
+    window.pjax ? loadMermaid() : document.addEventListener('DOMContentLoaded', loadMermaid)
+  }
+})()</script><script>function loadValine () {
+  function initValine () {
+    const valine = new Valine(Object.assign({
+      el: '#vcomment',
+      appId: 'BbuBjGh9to6TtPug5KeFflx1-gzGzoHsz',
+      appKey: '73XAE3zu9AokVhAvE61OP01g',
+      avatar: 'monsterid',
+      serverURLs: '',
+      emojiMaps: "",
+      path: window.location.pathname,
+      visitor: true
+    }, null))
+  }
+
+  if (typeof Valine === 'function') initValine() 
+  else getScript('https://cdn.jsdelivr.net/npm/valine/dist/Valine.min.js').then(initValine)
+}
+
+if ('Valine' === 'Valine' || !true) {
+  if (true) btf.loadComment(document.getElementById('vcomment'),loadValine)
+  else setTimeout(loadValine, 0)
+} else {
+  function loadOtherComment () {
+    loadValine()
+  }
+}</script><script>function addGitalkSource () {
+  const ele = document.createElement('link')
+  ele.rel = 'stylesheet'
+  ele.href= 'https://cdn.jsdelivr.net/npm/gitalk/dist/gitalk.min.css'
+  document.getElementsByTagName('head')[0].appendChild(ele)
+}
+
+function loadGitalk () {
+  function initGitalk () {
+    var gitalk = new Gitalk(Object.assign({
+      clientID: 'bfb6298af9f1ff707b95',
+      clientSecret: '8d5b4c3eb2db8da51a90e0c40823fa3ed7b9c539',
+      repo: 'wenkexia.github.io',
+      owner: 'wenkexia',
+      admin: ['wenkexia'],
+      id: 'b9a4cd64243e6d1039c2a9e040a4e3cf',
+      updateCountCallback: commentCount
+    },null))
+
+    gitalk.render('gitalk-container')
+  }
+
+  if (typeof Gitalk === 'function') initGitalk()
+  else {
+    addGitalkSource()
+    getScript('https://cdn.jsdelivr.net/npm/gitalk/dist/gitalk.min.js').then(initGitalk)
+  }
+}
+
+function commentCount(n){
+  let isCommentCount = document.querySelector('#post-meta .gitalk-comment-count')
+  if (isCommentCount) {
+    isCommentCount.innerHTML= n
+  }
+}
+
+if ('Valine' === 'Gitalk' || !true) {
+  if (true) btf.loadComment(document.getElementById('gitalk-container'), loadGitalk)
+  else loadGitalk()
+} else {
+  function loadOtherComment () {
+    loadGitalk()
+  }
+}</script></div><script defer="defer" id="ribbon" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/dist/canvas-ribbon.min.js" size="150" alpha="0.6" zIndex="-1" mobile="false" data-click="false"></script><script id="click-show-text" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/dist/click-show-text.min.js" data-mobile="true" data-text="Arts,ke,xia" data-fontsize="15px" data-random="true" async="async"></script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div><script>
+            window.imageLazyLoadSetting = {
+                isSPA: false,
+                preloadRatio: 1,
+                processImages: null,
+            };
+        </script><script>window.addEventListener("load",function(){var t=/\.(gif|jpg|jpeg|tiff|png)$/i,r=/^data:image\/[a-z]+;base64,/;Array.prototype.slice.call(document.querySelectorAll("img[data-original]")).forEach(function(a){var e=a.parentNode;"A"===e.tagName&&(e.href.match(t)||e.href.match(r))&&(e.href=a.dataset.original)})});</script><script>!function(n){n.imageLazyLoadSetting.processImages=o;var e=n.imageLazyLoadSetting.isSPA,i=n.imageLazyLoadSetting.preloadRatio||1,r=Array.prototype.slice.call(document.querySelectorAll("img[data-original]"));function o(){e&&(r=Array.prototype.slice.call(document.querySelectorAll("img[data-original]")));for(var t,a=0;a<r.length;a++)0<=(t=(t=r[a]).getBoundingClientRect()).bottom&&0<=t.left&&t.top<=(n.innerHeight*i||document.documentElement.clientHeight*i)&&function(){var t,e,n,i,o=r[a];t=o,e=function(){r=r.filter(function(t){return o!==t})},n=new Image,i=t.getAttribute("data-original"),n.onload=function(){t.src=i,e&&e()},t.src!==i&&(n.src=i)}()}o(),n.addEventListener("scroll",function(){var t,e;t=o,e=n,clearTimeout(t.tId),t.tId=setTimeout(function(){t.call(e)},500)})}(this);</script></body></html>
